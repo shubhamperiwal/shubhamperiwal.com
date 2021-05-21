@@ -3,7 +3,7 @@ import { Navbar, Nav, NavbarToggler, Collapse, NavItem } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
 
-class HeaderComp extends Component {
+class Header extends Component {
     constructor(props) {
         super(props);
 
@@ -31,23 +31,33 @@ class HeaderComp extends Component {
         this.props.onChangeLink(link);
     }
 
-    renderNav(className, link, img) {
+    renderNav(className, link, img, title) {
         return (
-            <div className="col-md-2" key={link}>
-                <NavItem>
-                    <NavLink
-                        className="nav-link nav-top"
-                        to={"/" + link}
-                        onClick={() => this.handleLinkClick(link)}
-                    >
-                        <img
-                            className={className + " headerImg" +(link==="about"? " headerAbout" : "")}
-                            src={img}
-                            alt="Image"
-                        />
-                    </NavLink>
-                </NavItem>
-            </div>
+            <NavItem className="headerNavItem" key={link} style={{borderRight: "none"}}>
+                <NavLink
+                    className="nav-link nav-top"
+                    to={"/" + link}
+                    onClick={() => this.handleLinkClick(link)}
+                >
+                    <div className="row">
+                        <div className="col col-sm-offset-4 col-sm-4 col-md-12">
+                            <img className="headerImg" src={img} alt="Image" />
+                        </div>
+                        <div className="col col-sm-6 col-md-12">
+                            <h5
+                                className={
+                                    className +
+                                    " headerTitle headerTitle" +
+                                    link
+                                }
+                                style={{ marginLeft: "5%" }}
+                            >
+                                {title}
+                            </h5>
+                        </div>
+                    </div>
+                </NavLink>
+            </NavItem>
         );
     }
 
@@ -55,13 +65,15 @@ class HeaderComp extends Component {
         const { images } = this.state;
         const activeLink = this.props.activeLink;
         const pages = ["home", "about", "experience", "project"];
+        const titles = ["Home", "About", "Experience", "Projects"];
         return (
             <>
                 <Navbar
                     light
                     className="navbarClass"
                     expand="md"
-                    style={{ width: "100%", whiteSpace: "nowrap" }}
+                    style={{ width: "100%", whiteSpace: "nowrap", zIndex: "999" }}
+                    sticky={"top"}
                 >
                     {/* Or can use arrow function in onClick */}
                     <NavbarToggler
@@ -74,20 +86,18 @@ class HeaderComp extends Component {
                     />
                     {/* if false then hidden else shown */}
                     <Collapse isOpen={this.state.isNavOpen} navbar>
-                        <div className="row" style={{ width: "100%" }}>
-                            <Nav navbar style={{ width: "100%" }}>
-                                <div className="col-1" />
-                                {pages.map((page) => {
+                            <Nav navbar style={{ width: "100%"}}>
+                                {pages.map((page, index) => {
                                     return this.renderNav(
                                         activeLink === page
                                             ? "active_item"
                                             : "",
                                         page,
-                                        images.header[page]
+                                        images.header[page],
+                                        titles[index]
                                     );
                                 })}
                             </Nav>
-                        </div>
                     </Collapse>
                 </Navbar>
             </>
@@ -102,4 +112,4 @@ function mapStateToProps(state) {
     };
 }
 
-export default connect(mapStateToProps)(HeaderComp);
+export default connect(mapStateToProps)(Header);

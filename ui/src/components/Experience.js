@@ -5,7 +5,6 @@ import {
     VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { connect } from "react-redux";
 
@@ -20,57 +19,8 @@ class Experience extends Component {
         };
     }
 
-    renderStars(score) {
-        return (
-            <>
-                {[...Array(score)].map((x, i) => (
-                    <FontAwesomeIcon id="starFilled" icon={faStar} key={i} />
-                ))}
-                {[...Array(5 - score)].map((x, i) => (
-                    <FontAwesomeIcon id="starEmpty" icon={faStar} key={i} />
-                ))}
-            </>
-        );
-    }
-
-    renderSkills(skills) {
-        const skills2d = skills.reduce(function (rows, key, index) {
-            return (
-                (index % 2 == 0
-                    ? rows.push([key])
-                    : rows[rows.length - 1].push(key)) && rows
-            );
-        }, []);
-
-        return skills2d.map((skillRow) => {
-            return (
-                <div className="row" key={skillRow[0]["title"]} style={{marginTop: "10px"}}>
-                    {skillRow.map((skill) => {
-                        return (
-                            <>
-                                <div
-                                    className="col-6 col-md-3"
-                                    key={skill["title"]}
-                                    style={{
-                                        fontSize: "17px",
-                                        textAlign: "left",
-                                        width: "30%",
-                                    }}
-                                >
-                                    {skill["title"]}
-                                </div>
-                                <div
-                                    className="col-6 col-md-3"
-                                    key={skill["title"] + skill["score"]}
-                                >
-                                    {this.renderStars(skill["score"])}
-                                </div>
-                            </>
-                        );
-                    })}
-                </div>
-            );
-        });
+    componentDidMount() {
+        window.scrollTo(0, 0);
     }
 
     renderIcon(img) {
@@ -94,7 +44,8 @@ class Experience extends Component {
         description,
         color,
         badges,
-        badgeColor
+        badgeColor,
+        fontColor
     ) {
         return (
             <VerticalTimelineElement
@@ -105,6 +56,9 @@ class Experience extends Component {
                 }
                 contentStyle={{
                     background: color,
+                    color: fontColor,
+                    border: "none",
+                    marginBottom: "0px",
                 }}
                 contentArrowStyle={{
                     borderRight: "7px solid " + color,
@@ -117,21 +71,45 @@ class Experience extends Component {
                         <Badge
                             key={j}
                             color={badgeColor}
-                            style={{ marginLeft: "1%", fontSize: "13px" }}
+                            style={{
+                                marginLeft: j > 0 ? "1%" : "0%",
+                                fontSize: "13px",
+                            }}
                         >
                             {badge}
                         </Badge>
                     ))}
                 </div>
-                <h4 className="vertical-timeline-element-title">{title}</h4>
-                <h5 className="vertical-timeline-element-subtitle">
-                    <>
-                        <span style={{ float: "left" }}>{subtitle}</span>
-                        <span style={{ float: "right" }}>{date}</span>
-                        <br />
-                    </>
-                </h5>
-                <div>{description}</div>
+                <h4
+                    className="vertical-timeline-element-title"
+                    style={{ color: fontColor }}
+                >
+                    {title}
+                </h4>
+                <div className="vertical-timeline-element-subtitle">
+                    <div className="row rowNoMargin">
+                        <div
+                            className="col-12 col-md-6"
+                            style={{ padding: "0px" }}
+                        >
+                            <span>{subtitle}</span>
+                        </div>
+                        <div
+                            className="col-12 col-md-6"
+                            style={{ padding: "0px" }}
+                        >
+                            <span
+                                className="vertical-timeline-element-date"
+                                style={{ float: "right", padding: "0px" }}
+                            >
+                                {date}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div className="vertical-timeline-element-description">
+                    {description}
+                </div>
             </VerticalTimelineElement>
         );
     }
@@ -140,66 +118,60 @@ class Experience extends Component {
         const { user, experiences, images } = this.state;
         return (
             <>
-                <div className="wideContainer">
-                    <div className="row">
+                <div className="experienceBody">
+                    <div className="wideContainer">
                         <img
-                            src={images.handwritten.career}
-                            style={{ maxWidth: "100%" }}
+                            src={images.handwritten.experience}
+                            style={{ maxWidth: "100%", maxHeight: "75px" }}
                         />
+                        <hr />
+                        <VerticalTimeline
+                            className="workTimeline"
+                            layout="1-column-left"
+                        >
+                            {experiences.work.map((exp, index) => {
+                                return this.renderTimelineElement(
+                                    true,
+                                    exp["date"],
+                                    images.experience[exp["img"]],
+                                    exp["title"],
+                                    exp["subtitle"],
+                                    exp["description"],
+                                    index % 2 === 0 ? "#ecb1ad" : "#976e68",
+                                    exp["tags"],
+                                    index % 2 === 0 ? "light" : "light",
+                                    index % 2 === 0 ? "black" : " white"
+                                );
+                            })}
+                        </VerticalTimeline>
                     </div>
-                    <hr />
-                    <VerticalTimeline
-                        className="workTimeline"
-                        layout="1-column-left"
-                    >
-                        {experiences.work.map((exp, index) => {
-                            return this.renderTimelineElement(
-                                true,
-                                exp["date"],
-                                images.experience[exp["img"]],
-                                exp["title"],
-                                exp["subtitle"],
-                                exp["description"],
-                                index % 2 === 0 ? "#C5E7FC" : "white",
-                                exp["tags"],
-                                index % 2 === 0 ? "light" : "info"
-                            );
-                        })}
-                    </VerticalTimeline>
-                    <img
-                        src={images.handwritten.education}
-                        style={{ maxWidth: "100%" }}
-                    />
-                    <hr />
-                    <VerticalTimeline
-                        className="educationTimeline"
-                        layout="1-column-left"
-                    >
-                        {experiences.education.map((exp, index) => {
-                            return this.renderTimelineElement(
-                                false,
-                                exp["date"],
-                                images.experience[exp["img"]],
-                                exp["title"],
-                                exp["subtitle"],
-                                exp["description"],
-                                index % 2 === 0 ? "#FBB8DC" : "white",
-                                exp["tags"],
-                                index % 2 === 0 ? "light" : "info"
-                            );
-                        })}
-                    </VerticalTimeline>
                 </div>
-                <hr style={{ margin: "0 0 0 0" }} />
-                <div id="skillsDiv" style={{ justifyContent: "center" }}>
-                    <div className="skillsTableDiv">
-                        <h2 id="skillsHeader">SKILLS</h2>
-                        {this.renderSkills(experiences.skills)}
-                    </div>
-                    <div className="skillsTableDiv">
-                        <h2 id="skillsHeader">TOOLS</h2>
-
-                        {this.renderSkills(experiences.tools)}
+                <div className="educationBody">
+                    <div className="wideContainer">
+                        <img
+                            src={images.handwritten.education}
+                            style={{ maxWidth: "100%", maxHeight: "75px" }}
+                        />
+                        <hr />
+                        <VerticalTimeline
+                            className="educationTimeline"
+                            layout="1-column-left"
+                        >
+                            {experiences.education.map((exp, index) => {
+                                return this.renderTimelineElement(
+                                    false,
+                                    exp["date"],
+                                    images.experience[exp["img"]],
+                                    exp["title"],
+                                    exp["subtitle"],
+                                    exp["description"],
+                                    index % 2 === 0 ? "#F3BA44" : "#c29845",
+                                    exp["tags"],
+                                    index % 2 === 0 ? "light" : "light",
+                                    index % 2 === 0 ? "black" : "white"
+                                );
+                            })}
+                        </VerticalTimeline>
                     </div>
                 </div>
             </>

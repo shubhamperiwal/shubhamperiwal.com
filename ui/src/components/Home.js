@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Jumbotron } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
 
@@ -13,17 +12,14 @@ class Home extends Component {
         };
     }
 
-    renderImage(img) {
+    renderImage(img, index) {
         return (
-            <div
-                className="col-sm-6 col-md-5"
-                style={{ margin: "10px 10px 10px 10px" }}
-            >
+            <div className={"col-sm-6 col-md-5 homeText homeImage homeImage"+index}>
                 <img
                     className="rounded img-fluid"
                     src={img}
                     alt="Image"
-                    style={{ maxWidth: "100%", maxHeight: "100%" }}
+                    style={{ maxHeight: "100%", float: "right" }}
                 />
             </div>
         );
@@ -31,31 +27,30 @@ class Home extends Component {
 
     renderTextBox(hwImg, description, link) {
         return (
-            <div
-                className="col-sm-8 col-md-6 homeTextBox"
-            >
+            <div className="col-sm-8 col-md-5 homeText homeTextBox">
                 <div className="container">
-                    <img src={hwImg} style={{ maxWidth: "80%" }} />
+                    <NavLink
+                        to={"/" + link}
+                        onClick={() => this.props.onChangeLink(link)}
+                    >
+                        <img
+                            className="homeTextImage"
+                            src={hwImg}
+                            style={{
+                                maxHeight: "75px",
+                                marginTop: "5%",
+                                boxShadow: "inherit",
+                            }}
+                        />
+                    </NavLink>
                     <p
                         style={{
                             marginTop: "5%",
                             fontSize: "20px",
+                            textDecoration: "none",
                         }}
                     >
                         {description}
-                    </p>
-                    <p>
-                        <NavLink
-                            to={"/" + link}
-                            onClick={() => this.props.onChangeLink({ link })}
-                        >
-                            <button
-                                type="button"
-                                className="homeTextBtn btn"
-                            >
-                                READ MORE
-                            </button>
-                        </NavLink>
                     </p>
                 </div>
             </div>
@@ -66,48 +61,52 @@ class Home extends Component {
         const pages = ["about", "experience", "project"];
         return (
             <>
-                <Jumbotron
-                    style={{
-                        backgroundImage: `url(${images.home.jumbotron})`,
-                        backgroundSize: "cover",
-                        backgroundAttachment: "fixed",
-                        height: "90vh",
-                        width: "100vw",
-                        backgroundRepeat: "no-repeat",
-                    }}
-                />
+                <hr className="headerLine" />
+                <img src={images.home.jumbotron} style={{ width: "100%" }} />
 
-                <div className="wideContainer">
-                    {/* About Row */}
+                <div>
                     {pages.map((ele, index) => {
-                        if (index % 2 === 0) {
+                        if (index % 2 !== 0) {
                             return (
                                 <div
-                                    className="row"
-                                    style={{ marginTop: "5%" }}
+                                    className={"homeTextArea homeTextArea" + index}
                                     key={index}
                                 >
-                                    {this.renderImage(images.home[ele])}
-                                    {this.renderTextBox(
-                                        images.handwritten[ele],
-                                        user.home[ele],
-                                        ele
-                                    )}
+                                    <div className="wideContainer">
+                                        <div
+                                            className={"row"}
+                                        >
+                                            {this.renderImage(images.home[ele], index)}
+                                            <div className="col-md-2 col-sm-0"/>
+                                            {this.renderTextBox(
+                                                images.handwritten[ele],
+                                                user.home[ele],
+                                                ele
+                                            )}
+                                        </div>
+                                    </div>
                                 </div>
                             );
                         } else {
                             return (
                                 <div
-                                    className="row"
-                                    style={{ marginTop: "5%" }}
+                                    className={"homeTextArea homeTextArea" + index}
+                                    style={{ width: "100%"}}
                                     key={index}
                                 >
-                                    {this.renderTextBox(
-                                        images.handwritten[ele],
-                                        user.home[ele],
-                                        ele
-                                    )}
-                                    {this.renderImage(images.home[ele])}
+                                    <div className="wideContainer">
+                                        <div
+                                            className="row"
+                                        >
+                                            {this.renderTextBox(
+                                                images.handwritten[ele],
+                                                user.home[ele],
+                                                ele
+                                            )}
+                                            <div className="col-md-2 col-sm-0"/>
+                                            {this.renderImage(images.home[ele], index)}
+                                        </div>
+                                    </div>
                                 </div>
                             );
                         }

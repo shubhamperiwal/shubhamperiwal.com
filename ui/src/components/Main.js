@@ -5,7 +5,7 @@ import Experience from "./Experience";
 import Project from "./Project";
 import Footer from "./Footer";
 import { Switch, Route, Redirect } from "react-router-dom";
-import HeaderComp from "./HeaderComp";
+import Header from "./Header";
 
 class Main extends Component {
     constructor(props) {
@@ -53,7 +53,7 @@ class Main extends Component {
         return (
             <>
                 <div className="body">
-                    <HeaderComp
+                    <Header
                         activeLink={this.state.activeLink}
                         onChangeLink={this.handleChangeLink}
                     />

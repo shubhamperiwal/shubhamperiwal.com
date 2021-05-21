@@ -1,20 +1,20 @@
 export default function () {
     const AWS_BASE =
-        "https://website-mg-images.s3-ap-southeast-1.amazonaws.com/";
+        "https://website-sp-images.s3-ap-southeast-1.amazonaws.com/";
     const AWS_BASE_HEADER = AWS_BASE + "header/";
     const AWS_BASE_HOME = AWS_BASE + "home/";
     const AWS_BASE_EXPERIENCE = AWS_BASE + "experience/";
     const AWS_BASE_HANDWRITTEN = AWS_BASE + "handwritten/";
-    const AWS_BASE_PROJECT = AWS_BASE + "project/";
+    const AWS_BASE_PROJECT = AWS_BASE + "projects/";
     const AWS_BASE_FOOTER = AWS_BASE + "footer/";
     return {
         base: AWS_BASE,
         aboutPortrait: AWS_BASE + "aboutPortrait.jpeg",
         header: {
-            home: AWS_BASE_HEADER + "drawHome.png",
-            about: AWS_BASE_HEADER + "drawAbout.png",
-            experience: AWS_BASE_HEADER + "drawExperience.png",
-            project: AWS_BASE_HEADER + "drawProject.png",
+            home: AWS_BASE_HEADER + "headerHome.jpeg",
+            about: AWS_BASE_HEADER + "headerAbout.jpg",
+            experience: AWS_BASE_HEADER + "headerExperience.png",
+            project: AWS_BASE_HEADER + "headerProject.png",
         },
         home: {
             about: AWS_BASE_HOME + "homeAbout.jpeg",
@@ -24,32 +24,34 @@ export default function () {
         },
         experience: {
             bev: AWS_BASE_EXPERIENCE + "expBEV.jpeg",
-            mit: AWS_BASE_EXPERIENCE + "expMIT.jpeg",
-            smu: AWS_BASE_EXPERIENCE + "expSMU.jpeg",
-            expedia: AWS_BASE_EXPERIENCE + "expExpedia.jpeg",
+            mit: AWS_BASE_EXPERIENCE + "expMIT.png",
+            smu: AWS_BASE_EXPERIENCE + "expSMU.png",
+            expedia: AWS_BASE_EXPERIENCE + "expExpedia.png",
             pg: AWS_BASE_EXPERIENCE + "expP&G.jpeg",
-            yojee: AWS_BASE_EXPERIENCE + "expYojee.jpeg",
+            yojee: AWS_BASE_EXPERIENCE + "expYojee.png",
         },
         handwritten: {
             about: AWS_BASE_HANDWRITTEN + "hwAbout.png",
+            interest: AWS_BASE_HANDWRITTEN + "hwInterests.png",
             career: AWS_BASE_HANDWRITTEN + "hwCareer.png",
             contact: AWS_BASE_HANDWRITTEN + "hwContact.png",
             education: AWS_BASE_HANDWRITTEN + "hwEducation.png",
             experience: AWS_BASE_HANDWRITTEN + "hwExperience.png",
-            project: AWS_BASE_HANDWRITTEN + "hwProject.png",
+            skill: AWS_BASE_HANDWRITTEN + "hwSkills.png",
+            tool: AWS_BASE_HANDWRITTEN + "hwTools.png",
+            project: AWS_BASE_HANDWRITTEN + "hwBook.png",
         },
         footer: {
             email: AWS_BASE_FOOTER + "drawEmail.png",
             gitHub: AWS_BASE_FOOTER + "drawGit.png",
-            insta: AWS_BASE_FOOTER + "drawInsta.png",
             linkedIn: AWS_BASE_FOOTER + "drawLinkedIn.png",
             telegram: AWS_BASE_FOOTER + "drawTelegram.png",
         },
         project: {
-            airbnb: AWS_BASE_PROJECT + "projAirbnb.jpeg",
-            cogni: AWS_BASE_PROJECT + "projCogni.jpeg",
-            google: AWS_BASE_PROJECT + "projGoogle.jpeg",
-            hacko: AWS_BASE_PROJECT + "projHackO.jpeg",
+            project1: AWS_BASE_PROJECT + "Project1.gif",
+            project2: AWS_BASE_PROJECT + "Project2.gif",
+            project3: AWS_BASE_PROJECT + "Project3.gif",
+            project4: AWS_BASE_PROJECT + "Project4.gif",
         },
     };
 }
