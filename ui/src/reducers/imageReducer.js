@@ -11,7 +11,7 @@ export default function () {
         base: AWS_BASE,
         aboutPortrait: AWS_BASE + "aboutPortrait.jpeg",
         header: {
-            home: AWS_BASE_HEADER + "headerHome.jpeg",
+            home: AWS_BASE_HEADER + "headerHome.png",
             about: AWS_BASE_HEADER + "headerAbout.jpg",
             experience: AWS_BASE_HEADER + "headerExperience.png",
             project: AWS_BASE_HEADER + "headerProject.png",

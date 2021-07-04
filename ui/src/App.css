@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
-@import url('https://fonts.googleapis.com/css?family=Monsterrat');
 
 :root {
     /* Universal */
@@ -73,19 +72,13 @@ li {
 }
 
 .body {
-    font-family: "Lato", "Monsterrat", sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
 /* Header */
 
 .headerTitle {
     color: var(--header_font);
-}
-
-.headerTitleabout,
-
-.headerTitleproject {
-    margin-left: 20px !important;
 }
 
 .active_item {
@@ -266,7 +259,8 @@ li {
 }
 
 .navbarClass {
-    background-color: var(--header_bg) !important;
+    /* background-color: var(--header_bg) !important; */
+    background-color: transparent !important;
 }
 
 .App-header {

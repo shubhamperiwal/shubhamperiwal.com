@@ -2,6 +2,13 @@ import React, { Component } from "react";
 import { Navbar, Nav, NavbarToggler, Collapse, NavItem } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faHome,
+    faUser,
+    faBriefcase,
+    faTv
+} from "@fortawesome/free-solid-svg-icons";
 
 class Header extends Component {
     constructor(props) {
@@ -10,6 +17,13 @@ class Header extends Component {
         this.state = {
             isNavOpen: false,
             images: props.images,
+        };
+
+        this.headerIcons = {
+            home: faHome,
+            about: faUser,
+            experience: faBriefcase,
+            project: faTv
         };
 
         // When you need to use this function in JSX, need to bind it like this
@@ -31,7 +45,7 @@ class Header extends Component {
         this.props.onChangeLink(link);
     }
 
-    renderNav(className, link, img, title) {
+    renderNav(className, link, icon, title) {
         return (
             <NavItem className="headerNavItem" key={link} style={{borderRight: "none"}}>
                 <NavLink
@@ -41,7 +55,8 @@ class Header extends Component {
                 >
                     <div className="row">
                         <div className="col col-sm-offset-4 col-sm-4 col-md-12">
-                            <img className="headerImg" src={img} alt="Image" />
+                            {/* <img className="headerImg" src={img} alt="Image" /> */}
+                            <FontAwesomeIcon icon={icon} size={"3x"}/>
                         </div>
                         <div className="col col-sm-6 col-md-12">
                             <h5
@@ -50,7 +65,6 @@ class Header extends Component {
                                     " headerTitle headerTitle" +
                                     link
                                 }
-                                style={{ marginLeft: "5%" }}
                             >
                                 {title}
                             </h5>
@@ -93,7 +107,7 @@ class Header extends Component {
                                             ? "active_item"
                                             : "",
                                         page,
-                                        images.header[page],
+                                        this.headerIcons[page],
                                         titles[index]
                                     );
                                 })}
