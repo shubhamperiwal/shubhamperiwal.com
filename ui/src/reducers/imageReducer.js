@@ -1,7 +1,6 @@
 export default function () {
     const AWS_BASE =
         "https://website-sp-images.s3-ap-southeast-1.amazonaws.com/";
-    const AWS_BASE_HEADER = AWS_BASE + "header/";
     const AWS_BASE_HOME = AWS_BASE + "home/";
     const AWS_BASE_EXPERIENCE = AWS_BASE + "experience/";
     const AWS_BASE_HANDWRITTEN = AWS_BASE + "handwritten/";
@@ -9,13 +8,7 @@ export default function () {
     const AWS_BASE_FOOTER = AWS_BASE + "footer/";
     return {
         base: AWS_BASE,
-        aboutPortrait: AWS_BASE + "aboutPortrait.jpeg",
-        header: {
-            home: AWS_BASE_HEADER + "headerHome.png",
-            about: AWS_BASE_HEADER + "headerAbout.jpg",
-            experience: AWS_BASE_HEADER + "headerExperience.png",
-            project: AWS_BASE_HEADER + "headerProject.png",
-        },
+        aboutPortrait: AWS_BASE + "aboutPortrait.jpg",
         home: {
             about: AWS_BASE_HOME + "homeAbout.jpeg",
             experience: AWS_BASE_HOME + "homeExperience.jpeg",

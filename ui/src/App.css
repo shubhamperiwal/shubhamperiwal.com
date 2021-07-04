@@ -2,8 +2,8 @@
 
 :root {
     /* Universal */
-    /* Header background */
-    --header_bg: #e7b4a1;
+    /* Body background */
+    --body_bg: #e7b4a1;
     /* Footer background */
     --footer_bg: #e7b4a1;
     /* Header active color */
@@ -43,7 +43,7 @@
     /* Background of filled stars in skills */
     --star_filled: #6f6e7d;
     /* Background of empty stars in skills */
-    --star_empty: #6f6e7d;
+    --star_empty: #aaaaaa;
     /* Experience background */
     --experience_bg: #F1D4CF;
     /* Education background */
@@ -73,6 +73,7 @@ li {
 
 .body {
     font-family: "Lato", sans-serif;
+    background-color: var(--body_bg);
 }
 
 /* Header */
@@ -118,6 +119,14 @@ li {
 }
 
 /* Home Page */
+
+.homeJumbotron {
+    background-image: url("https://website-sp-images.s3-ap-southeast-1.amazonaws.com/home/homeJumbotron.jpeg");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
 .homeTextImage {
     -webkit-filter: drop-shadow(2px 2px 2px #222);
     filter: drop-shadow(2px 2px 2px #222);

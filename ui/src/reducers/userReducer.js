@@ -57,91 +57,83 @@ export default function () {
             interests: [
                 {
                     title: "Reading",
-                    description: "It takes you to a different place every time",
+                    description: "Always striving to improve myself",
                 },
                 {
-                    title: "Writing",
-                    description: "Words can be both an escape and a destination",
+                    title: "Technology",
+                    description: "First in line to test and learn new technology",
                 },
                 {
                     title: "Working Out",
-                    description: "For the mind, body and soul",
+                    description: "There isn't any better stress buster",
                 },
                 {
-                    title: "Painting",
-                    description: "As my creative outlet",
+                    title: "Sports",
+                    description: "Always in for any racquet sports",
                 },
                 {
-                    title: "Cafe Hopping",
-                    description: "Because who doesn't like a good cup of coffee?",
+                    title: "Running",
+                    description: "Search for a run buddy...",
                 },
             ],
-            skills: [
-                {
-                    title: "SQL",
-                    score: 5,
-                },
+            languages: [
                 {
                     title: "Python",
                     score: 5,
                 },
                 {
-                    title: "PostgreSQL",
+                    title: "R",
                     score: 5,
                 },
                 {
-                    title: "Knime",
+                    title: "JavaScript (Vanilla | React | Node)",
+                    score: 5,
+                },
+                {
+                    title: "NoSQL",
+                    score: 5,
+                },
+                {
+                    title: "SQL",
                     score: 4,
                 },
                 {
-                    title: "Tableau",
-                    score: 5,
-                },
-                {
-                    title: "Holistics",
-                    score: 5,
+                    title: "Java",
+                    score: 4,
                 },
             ],
-            tools: [
+            skills: [
                 {
-                    title: "Data Studio",
+                    title: "Web Development",
                     score: 5,
                 },
                 {
-                    title: "Google Analytics | Ads | BigQuery",
-                    score: 5,
-                },
-                {
-                    title: "AWS Redshift",
+                    title: "Data Analytics",
                     score: 4,
                 },
                 {
-                    title: "SAS EG | Miner",
+                    title: "Machine Learning",
                     score: 4,
                 },
                 {
-                    title: "Stata",
-                    score: 4,
+                    title: "Cloud Architecture (AWS)",
+                    score: 3,
                 },
                 {
-                    title: "Procreate",
-                    score: 4,
+                    title: "App Development (Flutter)",
+                    score: 3,
                 },
                 {
-                    title: "Photoshop",
-                    score: 4,
-                },
-                {
-                    title: "HTML | CSS",
-                    score: 4,
+                    title: "Airflow",
+                    score: 3,
                 },
             ],
         },
         connect: {
-            email: "mailto:muskaang.2016@outlook.com",
-            linkedIn: "https://www.linkedin.com/in/muskaan-gupta09/",
-            telegram: "https://t.me/muskaang123",
-            gitHub: "https://github.com/muskaang",
+            email: "mailto:shubhamperiwal98@gmail.com",
+            linkedIn: "https://www.linkedin.com/in/shubhamperiwal/",
+            telegram: "https://t.me/shubhamperiwal",
+            gitHub: "https://github.com/shubhamperiwal98",
         },
     };
 }

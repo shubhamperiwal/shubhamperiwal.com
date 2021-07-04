@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Home from "./Home";
-import About from "./About";
 import Experience from "./Experience";
 import Project from "./Project";
 import Footer from "./Footer";
@@ -31,8 +30,6 @@ class Main extends Component {
             link = "home";
         } else if (path === "/experience") {
             link = "experience";
-        } else if (path === "/about") {
-            link = "about";
         } else if (path === "/project") {
             link = "project";
         }
@@ -50,13 +47,27 @@ class Main extends Component {
     }
 
     render() {
+        const { activeLink } = this.state;
+        console.log(activeLink);
         return (
             <>
                 <div className="body">
-                    <Header
-                        activeLink={this.state.activeLink}
-                        onChangeLink={this.handleChangeLink}
-                    />
+                    {activeLink == "home" ? (
+                        <div
+                            className="homeJumbotron"
+                            style={{ width: "100%" }}
+                        >
+                            <Header
+                                activeLink={this.state.activeLink}
+                                onChangeLink={this.handleChangeLink}
+                            />
+                        </div>
+                    ) : (
+                        <Header
+                            activeLink={this.state.activeLink}
+                            onChangeLink={this.handleChangeLink}
+                        />
+                    )}
                     <Switch>
                         {/* path ending with home */}
                         <Route
@@ -72,7 +83,6 @@ class Main extends Component {
                                 <Home onChangeLink={this.handleChangeLink} />
                             )}
                         />
-                        <Route path="/about" component={() => <About />} />
                         <Route
                             path="/experience"
                             component={() => <Experience />}
