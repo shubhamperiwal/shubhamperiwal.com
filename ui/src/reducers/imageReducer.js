@@ -13,7 +13,7 @@ export default function () {
         home: {
             about: AWS_BASE_HOME + "homeAbout.jpeg",
             experience: AWS_BASE_HOME + "homeExperience.jpeg",
-            jumbotron: AWS_BASE_HOME + "homeJumbotron.jpeg",
+            // jumbotron: AWS_BASE_HOME + "homeJumbotron.jpg",
             project: AWS_BASE_HOME + "homeProject.jpeg",
         },
         experience: {

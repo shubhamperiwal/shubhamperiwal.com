@@ -48,7 +48,6 @@ class Main extends Component {
 
     render() {
         const { activeLink } = this.state;
-        console.log(activeLink);
         return (
             <>
                 <div className="body">

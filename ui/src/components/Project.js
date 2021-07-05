@@ -57,7 +57,6 @@ class Project extends Component {
     }
     render() {
         const { images } = this.state;
-        console.log(images);
         const projects = this.state.projects.projects;
         const certificates = this.state.projects.certificates;
         const projects2d = projects.reduce(function (rows, key, index) {
@@ -84,7 +83,7 @@ class Project extends Component {
                             src={images.handwritten.project}
                             style={{ maxWidth: "100%", maxHeight: "75px" }}
                         /> */}
-                        <h2>Projects</h2>
+                        <h2>Achievements</h2>
                         <hr />
                         {projects2d.map((project) => {
                             return (

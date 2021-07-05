@@ -7,9 +7,9 @@
     /* Footer background */
     --footer_bg: #e7b4a1;
     /* Header active color */
-    --header_active: #f6e8e5;
+    --header_active: #9fd8fb;
     /* Header font */
-    --header_font: #4e3d45;
+    --header_font: whitesmoke;
 
     /* Home Page */
     /* About paragraph font */
@@ -97,6 +97,14 @@ li {
     border: 1px solid var(--header_active);
 }
 
+.headerIcon {
+    color: var(--header_font);
+}
+
+.headerIconActive {
+    color: var(--header_active);
+}
+
 /* Footer */
 
 .footer {
@@ -121,7 +129,7 @@ li {
 /* Home Page */
 
 .homeJumbotron {
-    background-image: url("https://website-sp-images.s3-ap-southeast-1.amazonaws.com/home/homeJumbotron.jpeg");
+    background-image: url("https://website-sp-images.s3-ap-southeast-1.amazonaws.com/home/homeJumbotron.jpg");
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -269,7 +277,8 @@ li {
 
 .navbarClass {
     /* background-color: var(--header_bg) !important; */
-    background-color: transparent !important;
+    background-color: rgba(0,0,0, 0.3) !important;
+    color: whitesmoke;
 }
 
 .App-header {

@@ -45,7 +45,7 @@ class Header extends Component {
         this.props.onChangeLink(link);
     }
 
-    renderNav(className, link, icon, title) {
+    renderNav(className, link, icon, title, iconClassName) {
         return (
             <NavItem className="headerNavItem" key={link} style={{borderRight: "none"}}>
                 <NavLink
@@ -56,7 +56,7 @@ class Header extends Component {
                     <div className="row">
                         <div className="col col-sm-offset-4 col-sm-4 col-md-12">
                             {/* <img className="headerImg" src={img} alt="Image" /> */}
-                            <FontAwesomeIcon icon={icon} size={"3x"}/>
+                            <FontAwesomeIcon icon={icon} size={"3x"} className={iconClassName}/>
                         </div>
                         <div className="col col-sm-6 col-md-12">
                             <h5
@@ -76,7 +76,6 @@ class Header extends Component {
     }
 
     render() {
-        const { images } = this.state;
         const activeLink = this.props.activeLink;
         const pages = ["home", "experience", "project"];
         const titles = ["Home", "Experience", "Projects"];
@@ -108,7 +107,10 @@ class Header extends Component {
                                             : "",
                                         page,
                                         this.headerIcons[page],
-                                        titles[index]
+                                        titles[index],
+                                        activeLink === page
+                                            ? "headerIconActive"
+                                            : "headerIcon"
                                     );
                                 })}
                             </Nav>
@@ -119,11 +121,4 @@ class Header extends Component {
     }
 }
 
-function mapStateToProps(state) {
-    //so now these props are directly available in the component
-    return {
-        images: state.images,
-    };
-}
-
-export default connect(mapStateToProps)(Header);
+export default Header;
