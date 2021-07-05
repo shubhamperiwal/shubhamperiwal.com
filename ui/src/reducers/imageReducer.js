@@ -16,12 +16,12 @@ export default function () {
             project: AWS_BASE_HOME + "homeProject.jpeg",
         },
         experience: {
-            bev: AWS_BASE_EXPERIENCE + "expBEV.jpeg",
-            mit: AWS_BASE_EXPERIENCE + "expMIT.png",
-            smu: AWS_BASE_EXPERIENCE + "expSMU.png",
-            expedia: AWS_BASE_EXPERIENCE + "expExpedia.png",
-            pg: AWS_BASE_EXPERIENCE + "expP&G.jpeg",
-            yojee: AWS_BASE_EXPERIENCE + "expYojee.png",
+            gic: AWS_BASE_EXPERIENCE + "gic.jpeg",
+            shopee: AWS_BASE_EXPERIENCE + "shopee.png",
+            smu: AWS_BASE_EXPERIENCE + "smu.png",
+            cmu: AWS_BASE_EXPERIENCE + "cmu.jpeg",
+            cudy: AWS_BASE_EXPERIENCE + "cudy.png",
+            hwa: AWS_BASE_EXPERIENCE + "hwa.jpeg",
         },
         handwritten: {
             about: AWS_BASE_HANDWRITTEN + "hwAbout.png",

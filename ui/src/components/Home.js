@@ -33,63 +33,6 @@ class Home extends Component {
         window.scrollTo(0, 0);
     }
 
-    renderStars(score) {
-        return (
-            <>
-                {[...Array(score)].map((x, i) => (
-                    <FontAwesomeIcon id="starFilled" icon={faStar} key={i} />
-                ))}
-                {[...Array(5 - score)].map((x, i) => (
-                    <FontAwesomeIcon id="starEmpty" icon={faStar} key={i} />
-                ))}
-            </>
-        );
-    }
-
-    renderSkills(skills) {
-        const skills2d = skills.reduce(function (rows, key, index) {
-            return (
-                (index % 2 == 0
-                    ? rows.push([key])
-                    : rows[rows.length - 1].push(key)) && rows
-            );
-        }, []);
-
-        return skills2d.map((skillRow) => {
-            return (
-                <div
-                    className="row"
-                    key={skillRow[0]["title"]}
-                    style={{ marginTop: "10px" }}
-                >
-                    {skillRow.map((skill) => {
-                        return (
-                            <>
-                                <div
-                                    className="col-6 col-md-3"
-                                    key={skill["title"]}
-                                    style={{
-                                        fontSize: "17px",
-                                        textAlign: "left",
-                                    }}
-                                >
-                                    {skill["title"]}
-                                </div>
-                                <div
-                                    className="col-6 col-md-3"
-                                    key={skill["title"] + skill["score"]}
-                                    style={{ textAlign: "center" }}
-                                >
-                                    {this.renderStars(skill["score"])}
-                                </div>
-                            </>
-                        );
-                    })}
-                </div>
-            );
-        });
-    }
-
     renderInterest(name, description, icon) {
         return (
             <div key={name} className="interestContainer">
@@ -155,27 +98,6 @@ class Home extends Component {
                                     this.interestIcons[interest.title]
                                 );
                             })}
-                        </div>
-                    </div>
-                </div>
-                <hr style={{ margin: "0px" }} />
-                <div id="skillsDiv" style={{ justifyContent: "center" }}>
-                    <div className="wideContainer">
-                        {/* <img
-                            src={images.handwritten.skill}
-                            style={{ maxWidth: "100%", maxHeight: "75px" }}
-                        /> */}
-                        <h3>Languages</h3>
-                        <div className="skillsTableDiv">
-                            {this.renderSkills(user.about.languages)}
-                        </div>
-                        {/* <img
-                            src={images.handwritten.tool}
-                            style={{ maxWidth: "100%", maxHeight: "75px" }}
-                        /> */}
-                        <h3>Skills | Tools</h3>
-                        <div className="skillsTableDiv">
-                            {this.renderSkills(user.about.skills)}
                         </div>
                     </div>
                 </div>

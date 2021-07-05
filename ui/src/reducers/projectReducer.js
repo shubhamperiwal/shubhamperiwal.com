@@ -1,8 +1,8 @@
 export default function () {
     return [
         {
-            img: "project1",
-            title: "Quote 1",
+            img: "fraud",
+            title: "Fraud Detection",
         },
         {
             img: "project2",

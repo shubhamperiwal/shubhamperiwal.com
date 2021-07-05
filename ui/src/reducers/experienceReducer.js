@@ -21,214 +21,292 @@ export default function () {
     return {
         work: [
             {
-                date: "Sep 2020 - Present",
-                img: "yojee",
-                title: "Yojee",
-                subtitle: "Data Analyst",
+                date: "Aug 2020 - Present",
+                img: "gic",
+                title: "GIC",
+                subtitle: "Quantitative Strategist",
                 description: (
                     <>
                         <br />
                         Highlight:
                         <br />
-                        As the solo Data Analyst in the team, I was responsible
-                        for building the end to end pipeline for operations
-                        analytics at Yojee. This included ETL processing done on
-                        AWS Redshift, creating reports and dashboards using a
-                        data model approach on Looker, product documentation,
-                        and performance monitoring.
-                        <br />
+                        Working with the{" "}
+                        {bold(
+                            "Fixed Income - Systematic Investments Group"
+                        )}. <br />
+                        Sitting at the prime intersection of Finance and
+                        Technology, my role is not only to build but also to
+                        come up with solutions which makes the lives of
+                        Portfolio Managers simpler and helps them gain
+                        additional alpha <br />
                         <br />
                         Main Responsibilities:
                         <ul>
+                            <li>Developing internal execution websites</li>
                             <li>
-                                Conducting full lifecycle of analytics projects,
-                                while ensuring efficiency and data integrity
+                                Building web development frameworks to apply
+                                division-wide solutions
                             </li>
                             <li>
-                                Tracking KPIs and supply chain performance along
-                                first mile, linehaul and last mile and providing
-                                operational insights to various stakeholders.
-                            </li>
-                            <li>
-                                Building a Google Analytics ecosystem to track
-                                Website Analytics
+                                Automate operational tasks as much as possible
                             </li>
                         </ul>
                     </>
                 ),
                 tags: [
-                    "Operations Analytics",
-                    "AWS Redshift",
-                    "Looker",
-                    "PostgreSQL",
-                ],
-            },
-            {
-                date: "May - July 2020",
-                img: "bev",
-                title: "BondEValue",
-                subtitle: "Information Services Analyst",
-                description: (
-                    <>
-                        <br />
-                        <ul>
-                            <li>
-                                Built up LinkedIn, Facebook, and Google Ads
-                                Digital Marketing initiatives
-                            </li>
-                            <li>
-                                Compiled the daily newsletter; Built a glossary
-                                of fixed income terms; Curated articles on the
-                                impact of COVID-19 on bond markets
-                            </li>
-                            <li>
-                                Automated the extraction of daily bond rating
-                                changes using Web Scraping; Built a model to
-                                filter news articles related to bonds using
-                                Python
-                            </li>
-                        </ul>
-                        In this editorial attached below, my colleague and I
-                        summarized the rating actions taken by Moody's, Fitch
-                        and S&P between February 1, 2020 and July 21, 2020.
-                        <br /> <br/>
-                        <a
-                            href={bevArticleLink}
-                            target="_blank"
-                            style={{ marginLeft: "40px" }}
-                        >
-                            <img
-                                src={bevImageLink}
-                                alt="BondEValue Article"
-                                style={{ maxHeight: "150px" }}
-                            />
-                        </a>
-                    </>
-                ),
-                tags: [
-                    "Content Creation",
-                    "Data Visualisation",
+                    "Web Development",
+                    "Solutions Architecture",
                     "Fixed Income",
                 ],
             },
             {
-                date: "Jan - Apr 2020",
-                img: "pg",
-                title: "Procter and Gamble",
-                subtitle: "IT Business Analyst Intern",
+                date: "Jan - Feb 2020",
+                img: "shopee",
+                title: "Shopee",
+                subtitle: "Regional Operations Intern",
                 description: (
                     <>
                         <br />
-                        Identified key business drivers to forecast what drives volume
-                        for haircare brands and sub-brands in the APAC markets given 
-                        pricing, media, distribution, and sales fundamentals data. It helped 
-                        the team to track the execution of key business driver adjustments 
-                        and alert against unexpected market or competitive changes. 
-                        It also helped the team answer very important questions like:
                         <ul>
-                        <br />
                             <li>
-                                Which feature is most efficient? 
+                                Wrote complex SQL queries o automate generation
+                                of financial reports
                             </li>
                             <li>
-                                Where should they focus their distribution efforts?
-                            </li>
-                            <li>
-                                Which brands are price elastic, and which ones should have promotions?
+                                Wrote Python scripts to streamline operational
+                                processes to save man hours
                             </li>
                         </ul>
                     </>
                 ),
-                tags: ["Statistical Modelling", "Knime", "Python"],
+                tags: ["SQL", "Python", "Automation"],
             },
             {
-                date: "May 2019 – Nov 2019",
-                img: "expedia",
-                title: "Expedia Group",
-                subtitle: "Search Engine Marketing Data Analyst Intern",
+                date: "Jun 2019 – Aug 2019",
+                img: "gic",
+                title: "GIC",
+                subtitle: "Software Developer cum Data Science Intern",
                 description: (
                     <>
                         <br />
                         <ul>
+                            <b>Software Development project </b>{" "}
+                            <i>(5 weeks):</i>
                             <li>
-                                Nominated by my manager as the “Best Team
-                                Player”
+                                Used native JavaScript to develop a user
+                                interface helping GIC employes create image maps
+                                using drag and drop tools.
                             </li>
                             <li>
-                                Built a data pipeline to track important SEM
-                                KPIs to maximize ROI for paid search campaigns
-                                across multiple platforms using SQL, Python and
-                                Visualization tools
+                                Used by Communications team to create internal
+                                infographics
                             </li>
                             <li>
-                                Established automated dashboards to extract
-                                value from ad relevance analysis and NLP
-                                analysis on ad copies using python
+                                Performed Load testing on our development
+                                servers. Used HP LoadRunner to test the server
+                                and provide suggestions to increase the
+                                concurrency of users.
+                            </li>
+                        </ul>
+                        <ul>
+                            <b>Data Science project </b>
+                            <i>(5 weeks):</i>
+                            <li>
+                                Worked with the Internal Audit Department on a
+                                Payments Analytics project
+                            </li>
+                            <li>
+                                Responsible for introducing airflow to the
+                                project and designing a process to streamline
+                                everything from ETL to feature engineering and
+                                modeling
+                            </li>
+                            <li>
+                                Perform feature engineering on raw data based on
+                                rule-based and ML-based models
                             </li>
                         </ul>
                     </>
                 ),
-                tags: ["Pain", "Suffering"],
+                tags: [
+                    "Feature Engineering",
+                    "Airflow",
+                    "Python",
+                    "JavaScript",
+                    ".NET",
+                ],
+            },
+            {
+                date: "Jul 2018 - Mar 2019",
+                img: "hwa",
+                title: "Hackwagon Acadey",
+                subtitle: "Teaching assistant",
+                description: (
+                    <>
+                        <br />
+                        Teaching Assistant for DS101 and DS102 <br />
+                        <ul>
+                            <li>
+                                DS101 (Data Science 101) is a course on
+                                Introduction to Python, which included numpy and
+                                pandas
+                            </li>
+                            <li>
+                                DS102 (Data Science 102) is a course on Advanced
+                                Python, which includes sklearn, pandas,
+                                seaborne, matplotlib, machine learning models,
+                                web scraping, etc.
+                            </li>
+                            <li>
+                                The job scope entailed aiding students during
+                                classes, correcting their homeworks and
+                                communicating best practices.
+                            </li>
+                        </ul>
+                    </>
+                ),
+                tags: ["SQL", "JavaScript", "PHP"],
+            },
+            {
+                date: "Jan - Aug 2018",
+                img: "cudy",
+                title: "Cudy Pte Ltd",
+                subtitle: "Web development Intern",
+                description: (
+                    <>
+                        <br />
+                        Worked in a team of 4 to develop the website <br />
+                        <ul>
+                            <li>
+                                Developed the database schema, backend logic,
+                                and the front-end integration of the features{" "}
+                            </li>
+                            <li>
+                                Responsible for developing a host of Cudy's
+                                features like the 'book class' feature, 'live
+                                streaming', and an 'interactive calendar'{" "}
+                            </li>
+                            <li>
+                                Connected with the REST APIs of companies like
+                                Temasys (for live-streaming) and Xfers (for
+                                payment gateway).
+                            </li>
+                        </ul>
+                    </>
+                ),
+                tags: ["SQL", "JavaScript", "PHP"],
             },
         ],
         education: [
             {
-                date: "2020 - 2021",
-                img: "mit",
-                title: "Massachusetts Institute of Technology on EdX",
-                subtitle: "Micro Masters’ Program, Supply Chain Management",
+                date: "2016 - 2020",
+                img: "smu",
+                title: "Singapore Management University",
+                subtitle: "BSc. in Information Systems and Analytics",
                 description: (
                     <>
                         <br />
+                        Interesting courses: Computational Thinking, Data
+                        Management, Software Engineering, Financial Accounting,
+                        Statistical Programming, Text Mining, Intro to AI,
+                        Entrepreneurship Practicuum <br />
+                        <b>Achievements:</b>
+                        <ul>
+                            <li>Graduated Summa cum Laude</li>
+                            <li>Dean's List AY 2017/18</li>
+                            <li>Dean's List AY 2018/19</li>
+                        </ul>
+                        <b>Final year project: </b>
                         <ul>
                             <li>
-                                Currently pursuing a professional credential
-                                offered by MIT consisting of 5 online courses on
-                                logistics and supply chain management
+                                Worked in a team of 6 to build a{" "}
+                                {link(
+                                    "website",
+                                    "https://explorer.blacksunplc.com/"
+                                )}{" "}
+                                which lets companies upload annual reports and
+                                users search and compare keywords across
+                                different reports of different years.
                             </li>
                             <li>
-                                Courses Covered: Supply Chain Analytics, Supply
-                                Chain Foundations, Supply Chain Design, Supply
-                                Chain Dynamics, Supply Chain Technology and
-                                Systems
+                                Built an analytics platform to monitor
+                                user-behavior
                             </li>
+                            <li>Received endorsements from MAS and SGX</li>
+                        </ul>
+                        <b>Beyond Curriculars:</b>
+                        <ul>
+                            <li>
+                                Teaching Assistant for a post-graduate module
+                                “Customer Focused Data Analytics"{" "}
+                            </li>
+                            <li>
+                                Teaching Assistant for a post-graduate module
+                                “AI Planning and Decision Making"{" "}
+                            </li>
+                            <li>
+                                Teaching Assistant for a post-graduate module
+                                Programming with Data"{" "}
+                            </li>
+                            <li>
+                                Teaching Assistant for an under-graduate module
+                                “Spreadsheet Modelling and Analytics"{" "}
+                            </li>
+                            <li>
+                                Executive Committee - SMU Business Intelligence
+                                and Analytics
+                            </li>
+                            <li>Sub Committee - SMU Devera</li>
                         </ul>
                     </>
                 ),
                 tags: [],
             },
             {
-                date: "2016 - 2020",
-                img: "smu",
-                title: "Singapore Management University",
-                subtitle: "BSc. in Economics and Analytics",
+                date: "Aug - Dec 2019",
+                img: "cmu",
+                title: "Carnegie Mellon University",
+                subtitle: "Exchange Programme, Information Technology",
                 description: (
                     <>
-                        <br />
-                            Bachelor of Science (Economics) and Analytics
-                            (Advanced Analytics Track)
+                        Went to Carnegie Mellon University for one semester as
+                        part of a student exchange programme. <br />
+                        Courses
                         <ul>
                             <li>
-                                {bold("Research Assistant:")} Assisted Professor
-                                Swapna with research on the application of Text
-                                Analytics- with Legal data and Class Reflection
-                                data
+                                Mobile app development in iOS - Used Swift and
+                                XCode to build a mobile app{" "}
                             </li>
                             <li>
-                                {bold("Teaching Assistant:")}Analytics
-                                Foundations, Macroeconomics, Economics &
-                                Society, Machine Learning & Financial
-                                Application, Leading Digital Transformation
+                                Practical Data Science - Gained a deeper
+                                understanding of the mathematics behind
+                                algorithms
                             </li>
                             <li>
-                                {bold("Leadership:")} Head of Curriculum at SMU
-                                Business Intelligence and Analytics Club ,
-                                Deputy Academic and Welfare Secretary at SMU
-                                Students’ Association
+                                Methods for Statistics and Data Science - Used R
+                                to create statistical models
                             </li>
                             <li>
-                                {bold("Other Activities and Societies:")} SMU
-                                Conjunct Consulting, SMU Emerging Markets
+                                Rise of Asian Studies - Learnt about Asian
+                                economies from a Western perspective
+                            </li>
+                            <li>
+                                Social Psychology - Studied about how man
+                                behaves in a society
+                            </li>
+                        </ul>
+                        Extra Curriculars
+                        <ul>
+                            <li>
+                                Out team won the prize for 'Best app for
+                                startups' during our final presentation for
+                                'Mobile app development in iOS'
+                            </li>
+                            <li>
+                                Participated in a global data science hackathon
+                                solving real world problems. We stood first in
+                                CMU and second across the USA, China and
+                                Germany.
                             </li>
                         </ul>
                     </>
