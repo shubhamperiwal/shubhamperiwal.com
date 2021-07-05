@@ -4,7 +4,8 @@ export default function () {
     const AWS_BASE_HOME = AWS_BASE + "home/";
     const AWS_BASE_EXPERIENCE = AWS_BASE + "experience/";
     const AWS_BASE_HANDWRITTEN = AWS_BASE + "handwritten/";
-    const AWS_BASE_PROJECT = AWS_BASE + "projects/";
+    const AWS_BASE_PROJECT = AWS_BASE + "project/";
+    const AWS_BASE_CERTIFICATE = AWS_BASE + "certificate/";
     const AWS_BASE_FOOTER = AWS_BASE + "footer/";
     return {
         base: AWS_BASE,
@@ -41,10 +42,20 @@ export default function () {
             telegram: AWS_BASE_FOOTER + "drawTelegram.png",
         },
         project: {
-            project1: AWS_BASE_PROJECT + "Project1.gif",
-            project2: AWS_BASE_PROJECT + "Project2.gif",
-            project3: AWS_BASE_PROJECT + "Project3.gif",
-            project4: AWS_BASE_PROJECT + "Project4.gif",
+            bigBytes: AWS_BASE_PROJECT + "bigBytes.jpg",
+            covestro: AWS_BASE_PROJECT + "covestro.jpeg",
+            fyp: AWS_BASE_PROJECT + "fyp.jpg",
+            geospatial: AWS_BASE_PROJECT + "geospatial.jpg",
+            devanagari: AWS_BASE_PROJECT + "devanagari.gif",
+            emojinator: AWS_BASE_PROJECT + "emojinator.gif",
         },
+        certificate: {
+            awsCloud: AWS_BASE_CERTIFICATE + "awsCloud.jpeg",
+            dsNano:AWS_BASE_CERTIFICATE + "dsNano.jpeg",
+            flutter:AWS_BASE_CERTIFICATE + "flutter.jpeg",
+            mlPython:AWS_BASE_CERTIFICATE + "mlPython.png",
+            kdb:AWS_BASE_CERTIFICATE + "kdb.jpeg",
+            mensa:AWS_BASE_CERTIFICATE + "mensa.png"
+        }
     };
 }

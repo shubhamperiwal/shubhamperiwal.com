@@ -7,7 +7,7 @@ import {
     faHome,
     faUser,
     faBriefcase,
-    faTv
+    faClipboardList
 } from "@fortawesome/free-solid-svg-icons";
 
 class Header extends Component {
@@ -23,7 +23,7 @@ class Header extends Component {
             home: faHome,
             about: faUser,
             experience: faBriefcase,
-            project: faTv
+            project: faClipboardList
         };
 
         // When you need to use this function in JSX, need to bind it like this
