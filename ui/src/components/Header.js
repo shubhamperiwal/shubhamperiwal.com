@@ -7,7 +7,7 @@ import {
     faHome,
     faUser,
     faBriefcase,
-    faClipboardList
+    faTrophy
 } from "@fortawesome/free-solid-svg-icons";
 
 class Header extends Component {
@@ -23,7 +23,7 @@ class Header extends Component {
             home: faHome,
             about: faUser,
             experience: faBriefcase,
-            project: faClipboardList
+            achievements: faTrophy
         };
 
         // When you need to use this function in JSX, need to bind it like this
@@ -54,11 +54,11 @@ class Header extends Component {
                     onClick={() => this.handleLinkClick(link)}
                 >
                     <div className="row">
-                        <div className="col col-sm-offset-4 col-sm-4 col-md-12">
+                        <div className="col col-sm-offset-4 col-sm-4 col-md-12 headerCol">
                             {/* <img className="headerImg" src={img} alt="Image" /> */}
                             <FontAwesomeIcon icon={icon} size={"3x"} className={iconClassName}/>
                         </div>
-                        <div className="col col-sm-6 col-md-12">
+                        <div className="col col-sm-6 col-md-12 headerCol">
                             <h5
                                 className={
                                     className +
@@ -77,8 +77,8 @@ class Header extends Component {
 
     render() {
         const activeLink = this.props.activeLink;
-        const pages = ["home", "experience", "project"];
-        const titles = ["Home", "Experience", "Projects"];
+        const pages = ["home", "experience", "achievements"];
+        const titles = ["Home", "Experience", "Achievements"];
         return (
             <>
                 <Navbar
@@ -109,7 +109,7 @@ class Header extends Component {
                                         this.headerIcons[page],
                                         titles[index],
                                         activeLink === page
-                                            ? "headerIconActive"
+                                            ? "headerIcon headerIconActive"
                                             : "headerIcon"
                                     );
                                 })}

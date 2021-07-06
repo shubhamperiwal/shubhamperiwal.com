@@ -94,8 +94,9 @@ class Project extends Component {
                             {projects.map((ele) => {
                                 return (
                                     <div
-                                        className="col-12 col-lg-3 col-md-4"
+                                        className="col-12 col-md-4"
                                         key={ele["title"]}
+                                        style={{marginTop: "10px"}}
                                     >
                                         {this.renderCard(
                                             ele["title"],
@@ -117,8 +118,9 @@ class Project extends Component {
                             {certificates.map((ele) => {
                                 return (
                                     <div
-                                        className="col-12 col-lg-3 col-md-4"
+                                        className="col-12 col-md-6"
                                         key={ele["title"]}
+                                        style={{marginTop: "10px"}}
                                     >
                                         {this.renderCardCertificate(
                                             ele["title"],

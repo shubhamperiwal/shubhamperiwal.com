@@ -216,8 +216,16 @@ li {
 
 @media only screen and (max-device-width: 480px) {
     .headerTitle {
-        margin-top: 10%;
+        margin-top: 5%;
     }
+
+    .headerCol {
+        text-align: center;
+    }
+    .headerIcon {
+        font-size: 40px!important;
+    }
+
     .footerImage {
         width: 70px;
         height: 70px;
@@ -265,6 +273,10 @@ li {
     .vertical-timeline-element-content {
         margin-left: 15%!important;
     }
+
+    .body {
+        font-size: 15px;
+    }
 }
 
 @media only screen and (min-device-width: 480px) {
@@ -276,6 +288,14 @@ li {
 
     .headerNavItem {
         margin: auto;
+    }
+
+    /* .headerIcon {
+        margin-left: 15%!important;
+    } */
+
+    .headerTitle {
+        font-size: 15px;
     }
 }
 
@@ -376,6 +396,7 @@ li {
 .projectCard {
     border: none;
     margin-top: 10px;
+    height: 100%;
 }
 
 .projectBorder {
