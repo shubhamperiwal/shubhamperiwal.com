@@ -28,10 +28,10 @@ class Experience extends Component {
         return (
             <>
                 {[...Array(score)].map((x, i) => (
-                    <FontAwesomeIcon id="starFilled" icon={faStar} key={i} />
+                    <FontAwesomeIcon id="starFilled" icon={faStar} key={i}/>
                 ))}
                 {[...Array(5 - score)].map((x, i) => (
-                    <FontAwesomeIcon id="starEmpty" icon={faStar} key={i} />
+                    <FontAwesomeIcon id="starEmpty" icon={faStar}/>
                 ))}
             </>
         );
@@ -122,7 +122,7 @@ class Experience extends Component {
                     borderRight: "7px solid " + color,
                 }}
                 icon={this.renderIcon(img)}
-                key={title}
+                key={title+subtitle}
             >
                 <div>
                     {badges.map((badge, j) => (

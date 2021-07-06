@@ -255,6 +255,10 @@ li {
     .vertical-timeline-element-date {
         float: left!important;
     }
+
+    .homeJumbotron {
+        height: 20vh!important;
+    }
 }
 
 @media only screen and (max-device-width: 769px){
@@ -272,6 +276,12 @@ li {
 
     .headerNavItem {
         margin: auto;
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 769px){
+    .homeJumbotron {
+        height: 50vh !important;
     }
 }
 
@@ -389,19 +399,7 @@ li {
 
 .vertical-timeline-element-content {
     margin-left: 10%;
-}
-
-.vertical-timeline-element-content {
     box-shadow: none;
-}
-
-/* title (Yojee) */
-.vertical-timeline-element-title {
-    /* margin-left: 10%; */
-}
-
-.vertical-timeline-element-subtitle {
-    /* margin-left: 10%; */
 }
 
 .rowNoMargin {

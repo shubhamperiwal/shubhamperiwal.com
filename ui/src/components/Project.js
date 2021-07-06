@@ -35,18 +35,23 @@ class Project extends Component {
         return (
             <Card className="projectBorder projectCard">
                 <div className="row no-gutters">
-                    <div className="col-md-4" style={{textAlign: "center"}}>
+                    <div className="col-4" style={{ textAlign: "center" }}>
                         <CardImg
                             className="projectBorder cardImg"
                             src={img}
                             alt={title}
                         />
-                        <i>{issuer} , {issueDate}</i>
+                        <i>
+                            {issuer} , {issueDate}
+                        </i>
                     </div>
-                    <div className="col-md-8">
+                    <div className="col-8">
                         <CardBody>
-                            <CardSubtitle style={{textAlign: "left"}}>
-                                <a href={link} target="_blank"> <b>{title}</b></a>
+                            <CardSubtitle style={{ textAlign: "left" }}>
+                                <a href={link} target="_blank">
+                                    {" "}
+                                    <b>{title}</b>
+                                </a>
                             </CardSubtitle>
                             {body}
                         </CardBody>
@@ -85,63 +90,48 @@ class Project extends Component {
                         /> */}
                         <h2>Achievements</h2>
                         <hr />
-                        {projects2d.map((project) => {
-                            return (
-                                <div
-                                    className="row"
-                                    key={project[0]["title"]}
-                                    style={{ marginBottom: "30px" }}
-                                >
-                                    {project.map((ele) => {
-                                        return (
-                                            <div
-                                                className="col-6 col-lg-3 col-md-4"
-                                                key={ele["title"]}
-                                            >
-                                                {this.renderCard(
-                                                    ele["title"],
-                                                    images.project[ele["img"]],
-                                                    ele["body"]
-                                                )}
-                                            </div>
-                                        );
-                                    })}
-                                </div>
-                            );
-                        })}
+                        <div className="row" style={{ marginBottom: "30px" }}>
+                            {projects.map((ele) => {
+                                return (
+                                    <div
+                                        className="col-12 col-lg-3 col-md-4"
+                                        key={ele["title"]}
+                                    >
+                                        {this.renderCard(
+                                            ele["title"],
+                                            images.project[ele["img"]],
+                                            ele["body"]
+                                        )}
+                                    </div>
+                                );
+                            })}
+                        </div>
                     </div>
                     <div className="wideContainer">
                         <h2>Certificates</h2>
                         <hr />
-                        {certificates2d.map((certificate) => {
-                            return (
-                                <div
-                                    className="row"
-                                    key={certificate[0]["title"]}
-                                    style={{ marginBottom: "30px" }}
-                                >
-                                    {certificate.map((ele) => {
-                                        return (
-                                            <div
-                                                className="col-6 col-lg-3 col-md-4"
-                                                key={ele["title"]}
-                                            >
-                                                {this.renderCardCertificate(
-                                                    ele["title"],
-                                                    images.certificate[
-                                                        ele["img"]
-                                                    ],
-                                                    ele["body"],
-                                                    ele["issuer"],
-                                                    ele["issueDate"],
-                                                    ele["link"]
-                                                )}
-                                            </div>
-                                        );
-                                    })}
-                                </div>
-                            );
-                        })}
+                        <div
+                            className="row"
+                            style={{ marginBottom: "30px" }}
+                        >
+                            {certificates.map((ele) => {
+                                return (
+                                    <div
+                                        className="col-12 col-lg-3 col-md-4"
+                                        key={ele["title"]}
+                                    >
+                                        {this.renderCardCertificate(
+                                            ele["title"],
+                                            images.certificate[ele["img"]],
+                                            ele["body"],
+                                            ele["issuer"],
+                                            ele["issueDate"],
+                                            ele["link"]
+                                        )}
+                                    </div>
+                                );
+                            })}
+                        </div>
                     </div>
                 </div>
             </>
