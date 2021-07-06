@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Navbar, Nav, NavbarToggler, Collapse, NavItem } from "reactstrap";
 import { NavLink } from "react-router-dom";
-import { connect } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faHome,
@@ -23,7 +22,7 @@ class Header extends Component {
             home: faHome,
             about: faUser,
             experience: faBriefcase,
-            achievements: faTrophy
+            achievement: faTrophy
         };
 
         // When you need to use this function in JSX, need to bind it like this
@@ -77,12 +76,12 @@ class Header extends Component {
 
     render() {
         const activeLink = this.props.activeLink;
-        const pages = ["home", "experience", "achievements"];
-        const titles = ["Home", "Experience", "Achievements"];
+        const pages = ["home", "experience", "achievement"];
+        const titles = ["Home", "Experience", "Achievement"];
         return (
             <>
                 <Navbar
-                    light
+                    dark
                     className="navbarClass"
                     expand="md"
                     style={{ width: "100%", whiteSpace: "nowrap", zIndex: "999" }}

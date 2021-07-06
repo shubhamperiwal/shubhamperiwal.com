@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Card, CardImg, CardTitle, CardBody, CardSubtitle } from "reactstrap";
 import { connect } from "react-redux";
-class Project extends Component {
+class Achievement extends Component {
     constructor(props) {
         super(props);
 
@@ -96,7 +96,7 @@ class Project extends Component {
                                     <div
                                         className="col-12 col-md-4"
                                         key={ele["title"]}
-                                        style={{marginTop: "10px"}}
+                                        style={{ marginTop: "10px" }}
                                     >
                                         {this.renderCard(
                                             ele["title"],
@@ -108,19 +108,18 @@ class Project extends Component {
                             })}
                         </div>
                     </div>
+                </div>
+                <div className="certificateBody">
                     <div className="wideContainer">
                         <h2>Certificates</h2>
                         <hr />
-                        <div
-                            className="row"
-                            style={{ marginBottom: "30px" }}
-                        >
+                        <div className="row" style={{ marginBottom: "30px" }}>
                             {certificates.map((ele) => {
                                 return (
                                     <div
                                         className="col-12 col-md-6"
                                         key={ele["title"]}
-                                        style={{marginTop: "10px"}}
+                                        style={{ marginTop: "10px" }}
                                     >
                                         {this.renderCardCertificate(
                                             ele["title"],
@@ -149,4 +148,4 @@ function mapStateToProps(state) {
     };
 }
 
-export default connect(mapStateToProps)(Project);
+export default connect(mapStateToProps)(Achievement);

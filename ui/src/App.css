@@ -3,7 +3,7 @@
 :root {
     /* Universal */
     /* Body background */
-    --body_bg: #e7b4a1;
+    --body_bg: #78675d;
     /* Footer background */
     --footer_bg: #e7b4a1;
     /* Header active color */
@@ -45,17 +45,17 @@
     /* Background of empty stars in skills */
     --star_empty: #aaaaaa;
     /* Experience background */
-    --experience_bg: #F1D4CF;
+    --experience_bg: #cce4d5;
     /* Education background */
-    --education_bg: #ffe09d;
+    --education_bg: #337772;
     /* Background of skills div */
     --skills_bg: #B4C9DD;
     /* Font of Skills header */
     --skills_header_font: #414553;
-    
-    /* Projects Page */
-    /* Body of projects page */
-    --project_body_bg: #cbbedf;
+    /* Project background */
+    --project_body_bg: #cce4d5;
+    /* Certificate background */
+    --certificate_body_bg: #337772
 }
 
 /* Universal */
@@ -199,6 +199,10 @@ li {
     background-color: var(--project_body_bg);
     padding: 10px 0 10px 0;
 }
+.certificateBody {
+    background-color: var(--certificate_body_bg);
+    padding: 10px 0 10px 0;
+}
 .App {
     text-align: center;
 }
@@ -220,7 +224,7 @@ li {
     }
 
     .headerCol {
-        text-align: center;
+        margin-left: 5%;
     }
     .headerIcon {
         font-size: 40px!important;
@@ -365,7 +369,7 @@ li {
     max-width: 100%;
 }
 
-.navbar-light {
+.navbar-dark {
     background-color: transparent;
     /* opacity: 0.7; */
     padding-bottom: 20px;

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Home from "./Home";
 import Experience from "./Experience";
-import Project from "./Project";
+import Achievement from "./Achievement";
 import Footer from "./Footer";
 import { Switch, Route, Redirect } from "react-router-dom";
 import Header from "./Header";
@@ -30,8 +30,8 @@ class Main extends Component {
             link = "home";
         } else if (path === "/experience") {
             link = "experience";
-        } else if (path === "/project") {
-            link = "project";
+        } else if (path === "/achievement") {
+            link = "achievement";
         }
 
         this.handleChangeLink(link);
@@ -86,7 +86,7 @@ class Main extends Component {
                             path="/experience"
                             component={() => <Experience />}
                         />
-                        <Route path="/project" component={() => <Project />} />
+                        <Route path="/achievement" component={() => <Achievement />} />
                         <Redirect to="/home" />
                     </Switch>
                     <Footer />
