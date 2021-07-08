@@ -77,7 +77,7 @@ class Header extends Component {
     render() {
         const activeLink = this.props.activeLink;
         const pages = ["home", "experience", "achievement"];
-        const titles = ["Home", "Experience", "Achievement"];
+        const titles = ["Home", "Experiences", "Achievements"];
         return (
             <>
                 <Navbar

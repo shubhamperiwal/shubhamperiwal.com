@@ -57,6 +57,7 @@ class Home extends Component {
         const { user, images } = this.state;
         return (
             <>
+                <div className="homeJumbotron" style={{ width: "100%" }} />
                 <div className="aboutBody">
                     <div className="wideContainer">
                         <img

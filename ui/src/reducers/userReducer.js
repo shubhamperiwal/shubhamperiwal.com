@@ -8,16 +8,16 @@ export default function () {
             description: (<>
                 ANALYTICAL. CURIOUS. HUMOROUS. <br/><br/>
                 
-                Shubham is a tech enthusiast whose creative zone lies at the intersection of technology {<FontAwesomeIcon icon={faLaptopCode}/>} and business {<FontAwesomeIcon icon={faBusinessTime}/>} <br/><br/>
+                Shubham is a tech enthusiast whose creative zone lies at the intersection of technology {<FontAwesomeIcon icon={faLaptopCode}/>} and business {<FontAwesomeIcon icon={faBusinessTime}/>} <br/>
 
-                His main interests are in the fields of Software Development as well as Data Analytics {<FontAwesomeIcon icon={faChartPie}/>}<br/><br/>
+                His main interests are in the fields of Software Development as well as Data Analytics {<FontAwesomeIcon icon={faChartPie}/>}<br/>
 
                 He likes exploring new technical skills and keeping himself updated by being enrolled in multiple online courses.<br/>
-                He also enjoys imparting his knowledge to others and aide them in any way possible.<br/><br/>
+                He also enjoys imparting his knowledge to others and aide them in any way possible.<br/>
 
                 Something that piques his interest includes solving riddles, puzzles {<FontAwesomeIcon icon={faPuzzlePiece}/>} and brain teasers. He loves everything from word scrambles to mathematical puzzles like Sudoku.<br/><br/>
 
-                Please feel free to get in touch with him if you're interested in anything from web development to entrepreneurship.<br/><br/>
+                Please feel free to get in touch with him if you're interested in anything from <b>development</b> to <b>entrepreneurship. </b><br/><br/>
                 
             </>),
 

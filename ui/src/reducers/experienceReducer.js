@@ -139,7 +139,7 @@ export default function () {
             {
                 date: "Jul 2018 - Mar 2019",
                 img: "hwa",
-                title: "Hackwagon Acadey",
+                title: "Hackwagon Academy",
                 subtitle: "Teaching assistant",
                 description: (
                     <>
@@ -165,7 +165,7 @@ export default function () {
                         </ul>
                     </>
                 ),
-                tags: ["SQL", "JavaScript", "PHP"],
+                tags: ["Python", "Data Science", "Web Scraping"],
             },
             {
                 date: "Jan - Aug 2018",
@@ -179,17 +179,10 @@ export default function () {
                         <ul>
                             <li>
                                 Developed the database schema, backend logic,
-                                and the front-end integration of the features{" "}
+                                and the front-end integration of multiple features{" "}
                             </li>
                             <li>
-                                Responsible for developing a host of Cudy's
-                                features like the 'book class' feature, 'live
-                                streaming', and an 'interactive calendar'{" "}
-                            </li>
-                            <li>
-                                Connected with the REST APIs of companies like
-                                Temasys (for live-streaming) and Xfers (for
-                                payment gateway).
+                                Within a span of a few weeks, we were able to go live
                             </li>
                         </ul>
                     </>
@@ -206,10 +199,11 @@ export default function () {
                 description: (
                     <>
                         <br />
-                        Interesting courses: Computational Thinking, Data
+                        <b>Highlight Courses:</b> Computational Thinking, Data
                         Management, Software Engineering, Financial Accounting,
                         Statistical Programming, Text Mining, Intro to AI,
                         Entrepreneurship Practicuum <br />
+                        <br />
                         <b>Achievements:</b>
                         <ul>
                             <li>Graduated Summa cum Laude</li>
@@ -237,20 +231,25 @@ export default function () {
                         <b>Beyond Curriculars:</b>
                         <ul>
                             <li>
-                                Teaching Assistant for a post-graduate module
-                                “Customer Focused Data Analytics"{" "}
-                            </li>
-                            <li>
-                                Teaching Assistant for a post-graduate module
-                                “AI Planning and Decision Making"{" "}
-                            </li>
-                            <li>
-                                Teaching Assistant for a post-graduate module
-                                Programming with Data"{" "}
-                            </li>
-                            <li>
-                                Teaching Assistant for an under-graduate module
-                                “Spreadsheet Modelling and Analytics"{" "}
+                                Teaching Assistant for:
+                                <ul>
+                                    <li>
+                                        Customer Focused Data Analytics -
+                                        Postgraduate module
+                                    </li>
+                                    <li>
+                                        AI Planning and Decision Making -
+                                        Postgraduate module
+                                    </li>
+                                    <li>
+                                        Programming with Data - Postgraduate
+                                        module
+                                    </li>
+                                    <li>
+                                        Spreadsheet Modelling and Analytics -
+                                        Undergraduate module
+                                    </li>
+                                </ul>
                             </li>
                             <li>
                                 Executive Committee - SMU Business Intelligence
@@ -271,42 +270,34 @@ export default function () {
                     <>
                         Went to Carnegie Mellon University for one semester as
                         part of a student exchange programme. <br />
-                        Courses
+                        Highlight Courses
                         <ul>
                             <li>
-                                Mobile app development in iOS - Used Swift and
-                                XCode to build a mobile app{" "}
+                                <b>Mobile app development in iOS</b> - Used
+                                Swift and XCode to build a mobile app{" "}
                             </li>
                             <li>
-                                Practical Data Science - Gained a deeper
+                                <b>Practical Data Science</b> - Gained a deeper
                                 understanding of the mathematics behind
                                 algorithms
                             </li>
                             <li>
-                                Methods for Statistics and Data Science - Used R
-                                to create statistical models
-                            </li>
-                            <li>
-                                Rise of Asian Studies - Learnt about Asian
-                                economies from a Western perspective
-                            </li>
-                            <li>
-                                Social Psychology - Studied about how man
-                                behaves in a society
+                                <b>Methods for Statistics and Data Science</b> -
+                                Used R to create statistical models
                             </li>
                         </ul>
                         Extra Curriculars
                         <ul>
                             <li>
-                                Out team won the prize for 'Best app for
-                                startups' during our final presentation for
-                                'Mobile app development in iOS'
-                            </li>
-                            <li>
-                                Participated in a global data science hackathon
-                                solving real world problems. We stood first in
+                                Participated in a <b>global data science hackathon
+                                solving</b> real world problems. We stood first in
                                 CMU and second across the USA, China and
                                 Germany.
+                            </li>
+                            <li>
+                                Out team won the prize for <b>'Best app for
+                                startups'</b> during our final presentation for
+                                'Mobile app development in iOS'
                             </li>
                         </ul>
                     </>

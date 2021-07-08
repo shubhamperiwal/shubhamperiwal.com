@@ -47,26 +47,13 @@ class Main extends Component {
     }
 
     render() {
-        const { activeLink } = this.state;
         return (
             <>
                 <div className="body">
-                    {activeLink == "home" ? (
-                        <div
-                            className="homeJumbotron"
-                            style={{ width: "100%" }}
-                        >
-                            <Header
-                                activeLink={this.state.activeLink}
-                                onChangeLink={this.handleChangeLink}
-                            />
-                        </div>
-                    ) : (
-                        <Header
-                            activeLink={this.state.activeLink}
-                            onChangeLink={this.handleChangeLink}
-                        />
-                    )}
+                    <Header
+                        activeLink={this.state.activeLink}
+                        onChangeLink={this.handleChangeLink}
+                    />
                     <Switch>
                         {/* path ending with home */}
                         <Route
@@ -86,7 +73,10 @@ class Main extends Component {
                             path="/experience"
                             component={() => <Experience />}
                         />
-                        <Route path="/achievement" component={() => <Achievement />} />
+                        <Route
+                            path="/achievement"
+                            component={() => <Achievement />}
+                        />
                         <Redirect to="/home" />
                     </Switch>
                     <Footer />
