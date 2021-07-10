@@ -194,7 +194,7 @@ class Experience extends Component {
                                     exp["title"],
                                     exp["subtitle"],
                                     exp["description"],
-                                    index % 2 === 0 ? "#cbbedf" : "#00428e",
+                                    index % 2 === 0 ? "#f9b28f" : "#2B2C7C",
                                     exp["tags"],
                                     index % 2 === 0 ? "light" : "light",
                                     index % 2 === 0 ? "black" : " white"
@@ -222,7 +222,7 @@ class Experience extends Component {
                                     exp["title"],
                                     exp["subtitle"],
                                     exp["description"],
-                                    index % 2 === 0 ? "#f9b28f" : "#431803",
+                                    index % 2 === 0 ? "#FFDB00" : "#92926D",
                                     exp["tags"],
                                     index % 2 === 0 ? "light" : "light",
                                     index % 2 === 0 ? "black" : "white"

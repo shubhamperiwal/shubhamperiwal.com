@@ -83,15 +83,15 @@ export default function () {
                     score: 4,
                 },
                 {
-                    title: "Cloud Architecture (AWS)",
+                    title: (<>Cloud Architecture <b>(AWS) </b></>),
                     score: 3,
                 },
                 {
-                    title: "App Development (Flutter)",
+                    title: (<>App Development <b>(Flutter) </b></>),
                     score: 3,
                 },
                 {
-                    title: "Airflow",
+                    title: (<>Workflow Management <b>(Airflow) </b></>),
                     score: 3,
                 },
             ],
