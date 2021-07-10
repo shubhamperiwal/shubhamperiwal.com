@@ -23,6 +23,7 @@ class Footer extends Component {
                         >
                             <img
                                 className="footerHW"
+                                alt="Keep in touch"
                                 src={images.handwritten.contact}
                             />
                         </div>
@@ -38,7 +39,7 @@ class Footer extends Component {
                                         <img
                                             className="rounded img-fluid footerImage"
                                             src={images.footer[key]}
-                                            alt="Image"
+                                            alt={key}
                                         />
                                     </a>
                                 );
