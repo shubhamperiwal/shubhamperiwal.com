@@ -117,7 +117,7 @@ class Achievement extends Component {
                             {certificates.map((ele) => {
                                 return (
                                     <div
-                                        className="col-12 col-md-6 col-lg-3"
+                                        className="col-12 col-md-6 col-lg-4 col-xl-3"
                                         key={ele["title"]}
                                         style={{ marginTop: "10px" }}
                                     >
