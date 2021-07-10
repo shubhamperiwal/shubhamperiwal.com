@@ -100,7 +100,7 @@ export default function () {
             email: "mailto:shubhamperiwal98@gmail.com",
             linkedIn: "https://www.linkedin.com/in/shubhamperiwal/",
             telegram: "https://t.me/shubhamperiwal",
-            gitHub: "https://github.com/shubhamperiwal98",
+            gitHub: "https://github.com/shubhamperiwal",
         },
     };
 }

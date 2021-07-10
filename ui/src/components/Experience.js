@@ -70,12 +70,12 @@ class Experience extends Component {
         );
     }
 
-    renderIcon(img) {
+    renderIcon(img, title) {
         return (
             <img
                 className="img-fluid"
                 src={img}
-                alt="Image"
+                alt={title}
                 style={{ height: "100%", width: "100%" }}
                 key={img}
             />
@@ -110,7 +110,7 @@ class Experience extends Component {
                 contentArrowStyle={{
                     borderRight: "7px solid " + color,
                 }}
-                icon={this.renderIcon(img)}
+                icon={this.renderIcon(img, title)}
                 key={title + subtitle}
             >
                 <div>
@@ -169,6 +169,7 @@ class Experience extends Component {
                     <div className="wideContainer">
                         <img
                             src={images.handwritten.experience}
+                            alt={"Experience - Shubham Periwal"}
                             style={{ maxWidth: "100%", maxHeight: "75px" }}
                         />
                         <hr />
@@ -197,6 +198,7 @@ class Experience extends Component {
                     <div className="wideContainer">
                         <img
                             src={images.handwritten.education}
+                            alt="Education - Shubham Periwal"
                             style={{ maxWidth: "100%", maxHeight: "75px" }}
                         />
                         <hr />

@@ -86,6 +86,7 @@ class Achievement extends Component {
                     <div className="wideContainer">
                         {/* <img
                             src={images.handwritten.project}
+                            alt="Project - Shubham Periwal"
                             style={{ maxWidth: "100%", maxHeight: "75px" }}
                         /> */}
                         <h2>Achievements</h2>

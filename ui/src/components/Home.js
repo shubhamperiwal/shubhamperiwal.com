@@ -62,6 +62,7 @@ class Home extends Component {
                     <div className="wideContainer">
                         <img
                             src={images.handwritten.about}
+                            alt="About me - Shubham Periwal"
                             style={{ maxWidth: "100%", maxHeight: "75px" }}
                         />
                         <hr />
@@ -75,7 +76,7 @@ class Home extends Component {
                                 <img
                                     className="img-fluid"
                                     src={images.aboutPortrait}
-                                    alt="Image"
+                                    alt="Portrait image - Shubham Periwal"
                                     style={{
                                         maxWidth: "100%",
                                         maxHeight: "100%",
@@ -89,6 +90,7 @@ class Home extends Component {
                     <div className="wideContainer">
                         <img
                             src={images.handwritten.interest}
+                            alt = "Interests - Shubham Periwal"
                             style={{ maxWidth: "100%", maxHeight: "75px" }}
                         />
                         <div className="row rowNoMargin">
