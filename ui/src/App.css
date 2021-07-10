@@ -367,9 +367,6 @@ li {
     margin: 16px 0 16px 24px;
 }
 
-.navbar-toggler {
-    background-color: white;
-}
 .navbar {
     max-width: 100%;
 }
@@ -495,12 +492,12 @@ li {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    padding: 8px !important;
+    padding: 6px !important;
     height: 100px;
 }
 
 .interest {
-    width: 100px;
+    width: 90px;
     height: 75px;
     margin: 10px;
     margin-bottom: 50px;

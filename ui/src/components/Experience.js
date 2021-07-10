@@ -28,56 +28,46 @@ class Experience extends Component {
         return (
             <>
                 {[...Array(score)].map((x, i) => (
-                    <FontAwesomeIcon id="starFilled" icon={faStar} key={i}/>
+                    <FontAwesomeIcon id="starFilled" icon={faStar} key={i} />
                 ))}
                 {[...Array(5 - score)].map((x, i) => (
-                    <FontAwesomeIcon id="starEmpty" icon={faStar}/>
+                    <FontAwesomeIcon id="starEmpty" icon={faStar} />
                 ))}
             </>
         );
     }
 
     renderSkills(skills) {
-        const skills2d = skills.reduce(function (rows, key, index) {
-            return (
-                (index % 2 == 0
-                    ? rows.push([key])
-                    : rows[rows.length - 1].push(key)) && rows
-            );
-        }, []);
-
-        return skills2d.map((skillRow) => {
-            return (
-                <div
-                    className="row"
-                    key={skillRow[0]["title"]}
-                    style={{ marginTop: "10px" }}
-                >
-                    {skillRow.map((skill) => {
-                        return (
-                            <>
-                                <div
-                                    className="col-6 col-md-3"
-                                    key={skill["title"]}
-                                    style={{
-                                        textAlign: "left",
-                                    }}
-                                >
-                                    {skill["title"]}
-                                </div>
-                                <div
-                                    className="col-6 col-md-3"
-                                    key={skill["title"] + skill["score"]}
-                                    style={{ textAlign: "center" }}
-                                >
-                                    {this.renderStars(skill["score"])}
-                                </div>
-                            </>
-                        );
-                    })}
-                </div>
-            );
-        });
+        return (
+            <div
+                className="row"
+                style={{ marginTop: "10px" }}
+            >
+                {skills.map((skill) => {
+                    return (
+                        <>
+                            <div
+                                className="col-6 col-md-3"
+                                key={skill["title"]}
+                                style={{
+                                    textAlign: "left",
+                                    marginTop: "5px"
+                                }}
+                            >
+                                {skill["title"]}
+                            </div>
+                            <div
+                                className="col-6 col-md-3"
+                                key={skill["title"] + skill["score"]}
+                                style={{ textAlign: "center" }}
+                            >
+                                {this.renderStars(skill["score"])}
+                            </div>
+                        </>
+                    );
+                })}
+            </div>
+        );
     }
 
     renderIcon(img) {
@@ -121,7 +111,7 @@ class Experience extends Component {
                     borderRight: "7px solid " + color,
                 }}
                 icon={this.renderIcon(img)}
-                key={title+subtitle}
+                key={title + subtitle}
             >
                 <div>
                     {badges.map((badge, j) => (
@@ -194,7 +184,7 @@ class Experience extends Component {
                                     exp["title"],
                                     exp["subtitle"],
                                     exp["description"],
-                                    index % 2 === 0 ? "#f9b28f" : "#2B2C7C",
+                                    index % 2 === 0 ? "#f9b28f" : "#92926D",
                                     exp["tags"],
                                     index % 2 === 0 ? "light" : "light",
                                     index % 2 === 0 ? "black" : " white"
@@ -222,7 +212,7 @@ class Experience extends Component {
                                     exp["title"],
                                     exp["subtitle"],
                                     exp["description"],
-                                    index % 2 === 0 ? "#FFDB00" : "#92926D",
+                                    index % 2 === 0 ? "#DBC224" : "#2B2C7C",
                                     exp["tags"],
                                     index % 2 === 0 ? "light" : "light",
                                     index % 2 === 0 ? "black" : "white"
@@ -245,7 +235,7 @@ class Experience extends Component {
                             src={images.handwritten.tool}
                             style={{ maxWidth: "100%", maxHeight: "75px" }}
                         /> */}
-                        <h3>Skills | Tools</h3>
+                        <h3>Skills</h3>
                         <div className="skillsTableDiv">
                             {this.renderSkills(user.about.skills)}
                         </div>
