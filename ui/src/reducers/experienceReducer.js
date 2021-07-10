@@ -30,7 +30,7 @@ export default function () {
                         <br />
                         Highlight:
                         <br />
-                        Working with the{" "}
+                        Part of{" "}
                         {bold(
                             "Fixed Income - Systematic Investments Group"
                         )}. <br />
@@ -42,7 +42,7 @@ export default function () {
                         <br />
                         Main Responsibilities:
                         <ul>
-                            <li>Developing internal execution websites</li>
+                            <li>Developing internal trade execution websites</li>
                             <li>
                                 Building web development frameworks to apply
                                 division-wide solutions

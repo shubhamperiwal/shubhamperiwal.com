@@ -60,7 +60,6 @@ class Experience extends Component {
                                     className="col-6 col-md-3"
                                     key={skill["title"]}
                                     style={{
-                                        fontSize: "17px",
                                         textAlign: "left",
                                     }}
                                 >
