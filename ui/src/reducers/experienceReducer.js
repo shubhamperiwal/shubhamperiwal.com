@@ -60,9 +60,12 @@ export default function () {
                 description: (
                     <>
                         <br />
+                        Part of the Payments team in Regional Operations.
+                        <br />
+                        Main responsibilities:
                         <ul>
                             <li>
-                                Wrote complex SQL queries o automate generation
+                                Wrote complex SQL queries to automate generation
                                 of financial reports
                             </li>
                             <li>
@@ -82,41 +85,43 @@ export default function () {
                 description: (
                     <>
                         <br />
+                        It was a 10 week internship and I split my time between
+                        Enterprise Strategy and Internal Audit teams.
                         <ul>
                             <b>Software Development project </b>{" "}
                             <i>(5 weeks):</i>
                             <li>
-                                Used native JavaScript to develop a user
+                                Used <b>JavaScript</b> to develop a user
                                 interface helping GIC employes create image maps
                                 using drag and drop tools.
                             </li>
                             <li>
                                 Used by Communications team to create internal
-                                infographics
+                                infographics.
                             </li>
                             <li>
                                 Performed Load testing on our development
-                                servers. Used HP LoadRunner to test the server
-                                and provide suggestions to increase the
-                                concurrency of users.
+                                servers.
+                            </li>
+                            <li>
+                                {" "}
+                                Used HP LoadRunner to test the server and
+                                provide suggestions to increase the concurrency
+                                of users.
                             </li>
                         </ul>
                         <ul>
                             <b>Data Science project </b>
                             <i>(5 weeks):</i>
                             <li>
-                                Worked with the Internal Audit Department on a
-                                Payments Analytics project
-                            </li>
-                            <li>
-                                Responsible for introducing airflow to the
-                                project and designing a process to streamline
+                                Responsible for introducing <b>airflow</b> to
+                                the team and designing a worfklow to streamline
                                 everything from ETL to feature engineering and
                                 modeling
                             </li>
                             <li>
-                                Perform feature engineering on raw data based on
-                                rule-based and ML-based models
+                                Use <b>python</b> Perform feature engineering on
+                                raw data based on rule-based and ML-based models
                             </li>
                         </ul>
                     </>
@@ -168,7 +173,10 @@ export default function () {
                 description: (
                     <>
                         <br />
-                        Worked in a team of 4 to develop the website <br />
+                        Joined a fledgling startup. Worked in a team of 4 to
+                        develop an EdTech paltform where studens and teachers
+                        can conduct online classes <br />
+                        Main responsibilities:
                         <ul>
                             <li>
                                 Developed the database schema, backend logic,
@@ -265,7 +273,7 @@ export default function () {
                     <>
                         Went to Carnegie Mellon University for one semester as
                         part of a student exchange programme. <br />
-                        Highlight Courses
+                        <b>Highlight Courses</b>
                         <ul>
                             <li>
                                 <b>Mobile app development in iOS</b> - Used
@@ -281,7 +289,7 @@ export default function () {
                                 Used R to create statistical models
                             </li>
                         </ul>
-                        Extra Curriculars
+                        <b>Extra Curriculars</b>
                         <ul>
                             <li>
                                 Participated in a{" "}
@@ -290,7 +298,7 @@ export default function () {
                                 second across the USA, China and Germany.
                             </li>
                             <li>
-                                Out team won the prize for{" "}
+                                Our team won the prize for{" "}
                                 <b>'Best app for startups'</b> during our final
                                 presentation for 'Mobile app development in iOS'
                             </li>
