@@ -6,6 +6,7 @@ export default function () {
     const AWS_BASE_HANDWRITTEN = AWS_BASE + "handwritten/";
     const AWS_BASE_PROJECT = AWS_BASE + "project/";
     const AWS_BASE_CERTIFICATE = AWS_BASE + "certificate/";
+    const AWS_BASE_CURRENT = AWS_BASE + "current/";
     const AWS_BASE_FOOTER = AWS_BASE + "footer/";
     return {
         base: AWS_BASE,
@@ -56,6 +57,13 @@ export default function () {
             mlPython:AWS_BASE_CERTIFICATE + "mlPython.png",
             kdb:AWS_BASE_CERTIFICATE + "kdb.jpeg",
             mensa:AWS_BASE_CERTIFICATE + "mensa.png"
+        },
+        current: {
+            cfa:AWS_BASE_CURRENT + "cfa.png",
+            tarzan: AWS_BASE_CURRENT+"tarzan.jpeg",
+            hockeyStick: AWS_BASE_CURRENT+"hockeyStick.jpeg",
+            monk: AWS_BASE_CURRENT+"monk.jpeg",
+            noFilter: AWS_BASE_CURRENT+"noFilter.jpeg"
         }
     };
 }

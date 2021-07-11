@@ -4,11 +4,6 @@ import { connect } from "react-redux";
 class Achievement extends Component {
     constructor(props) {
         super(props);
-
-        this.state = {
-            images: props.images,
-            projects: props.projects,
-        };
     }
 
     componentDidMount() {
@@ -61,24 +56,9 @@ class Achievement extends Component {
         );
     }
     render() {
-        const { images } = this.state;
-        const projects = this.state.projects.projects;
-        const certificates = this.state.projects.certificates;
-        const projects2d = projects.reduce(function (rows, key, index) {
-            return (
-                (index % 4 == 0
-                    ? rows.push([key])
-                    : rows[rows.length - 1].push(key)) && rows
-            );
-        }, []);
-
-        const certificates2d = certificates.reduce(function (rows, key, index) {
-            return (
-                (index % 4 == 0
-                    ? rows.push([key])
-                    : rows[rows.length - 1].push(key)) && rows
-            );
-        }, []);
+        const images = this.props.images;
+        const projects = this.props.achievements.projects;
+        const certificates = this.props.achievements.certificates;
 
         return (
             <>
@@ -142,10 +122,9 @@ class Achievement extends Component {
 }
 
 function mapStateToProps(state) {
-    //so now these props are directly available in the component
     return {
         images: state.images,
-        projects: state.projects,
+        achievements: state.achievements,
     };
 }
 

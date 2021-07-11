@@ -1,8 +1,3 @@
-// use this function when you want to embolden a piece of text
-function bold(text) {
-    return <b>{text}</b>;
-}
-
 // use this function when you want to hyperlink a piece of text
 function link(text, link) {
     return (
@@ -11,11 +6,6 @@ function link(text, link) {
         </a>
     );
 }
-
-var bevArticleLink =
-    "https://bondevalue.com/news/rating-agencies-exacerbate-covid-crisis-for-sovereigns/";
-var bevImageLink =
-    "https://bondevalue.com/wp-content/uploads/2020/07/Rating-Actions-on-Sovereigns-Featured-Image-1.png";
 
 export default function () {
     return {
@@ -31,9 +21,10 @@ export default function () {
                         Highlight:
                         <br />
                         Part of{" "}
-                        {bold(
-                            "Fixed Income - Systematic Investments Group"
-                        )}. <br />
+                        <b>
+                            "Fixed Income - Systematic Investments Group" )
+                        </b>{" "}
+                        <br />
                         Sitting at the prime intersection of Finance and
                         Technology, my role is not only to build but also to
                         come up with solutions which makes the lives of
@@ -42,7 +33,9 @@ export default function () {
                         <br />
                         Main Responsibilities:
                         <ul>
-                            <li>Developing internal trade execution websites</li>
+                            <li>
+                                Developing internal trade execution websites
+                            </li>
                             <li>
                                 Building web development frameworks to apply
                                 division-wide solutions
@@ -179,10 +172,12 @@ export default function () {
                         <ul>
                             <li>
                                 Developed the database schema, backend logic,
-                                and the front-end integration of multiple features{" "}
+                                and the front-end integration of multiple
+                                features{" "}
                             </li>
                             <li>
-                                Within a span of a few weeks, we were able to go live
+                                Within a span of a few weeks, we were able to go
+                                live
                             </li>
                         </ul>
                     </>
@@ -289,15 +284,15 @@ export default function () {
                         Extra Curriculars
                         <ul>
                             <li>
-                                Participated in a <b>global data science hackathon
-                                solving</b> real world problems. We stood first in
-                                CMU and second across the USA, China and
-                                Germany.
+                                Participated in a{" "}
+                                <b>global data science hackathon solving</b>{" "}
+                                real world problems. We stood first in CMU and
+                                second across the USA, China and Germany.
                             </li>
                             <li>
-                                Out team won the prize for <b>'Best app for
-                                startups'</b> during our final presentation for
-                                'Mobile app development in iOS'
+                                Out team won the prize for{" "}
+                                <b>'Best app for startups'</b> during our final
+                                presentation for 'Mobile app development in iOS'
                             </li>
                         </ul>
                     </>

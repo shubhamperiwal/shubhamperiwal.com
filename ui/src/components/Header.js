@@ -5,8 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faHome,
     faUser,
-    faBriefcase,
-    faTrophy
+    faTrophy,
+    faHistory,
+    faCalendarDay
 } from "@fortawesome/free-solid-svg-icons";
 
 class Header extends Component {
@@ -21,8 +22,9 @@ class Header extends Component {
         this.headerIcons = {
             home: faHome,
             about: faUser,
-            experience: faBriefcase,
-            achievement: faTrophy
+            experience: faHistory,
+            achievement: faTrophy,
+            current: faCalendarDay
         };
 
         // When you need to use this function in JSX, need to bind it like this
@@ -76,8 +78,8 @@ class Header extends Component {
 
     render() {
         const activeLink = this.props.activeLink;
-        const pages = ["home", "experience", "achievement"];
-        const titles = ["Home", "Experiences", "Achievements"];
+        const pages = ["home", "experience", "achievement", "current"];
+        const titles = ["Home", "Experiences", "Achievements", "Current Affairs"];
         return (
             <>
                 <Navbar

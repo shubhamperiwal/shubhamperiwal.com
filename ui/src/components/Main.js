@@ -5,6 +5,7 @@ import Achievement from "./Achievement";
 import Footer from "./Footer";
 import { Switch, Route, Redirect } from "react-router-dom";
 import Header from "./Header";
+import Current from "./Current";
 
 class Main extends Component {
     constructor(props) {
@@ -76,6 +77,10 @@ class Main extends Component {
                         <Route
                             path="/achievement"
                             component={() => <Achievement />}
+                        />
+                        <Route
+                            path="/current"
+                            component={() => <Current />}
                         />
                         <Redirect to="/home" />
                     </Switch>

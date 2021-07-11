@@ -56,7 +56,10 @@
     --project_body_bg: #cce4d5;
     /* Certificate background */
     --certificate_body_bg: #337772;
-
+    /* Upcoming goals background */
+    --upcoming_goal_bg: #cce4d5;
+    /* Current books background */
+    --current_books_bg: #337772;
     /* Font sizes */
     --small_font_size: 15px;
     /* font size */
@@ -208,6 +211,14 @@ li {
     background-color: var(--certificate_body_bg);
     padding: 10px 0 10px 0;
 }
+.upcomingGoalBody {
+    background-color: var(--upcoming_goal_bg);
+    padding: 10px 0 10px 0;
+}
+.currentBooksBody {
+    background-color: var(--current_books_bg);
+    padding: 10px 0 10px 0;
+}
 .App {
     text-align: center;
 }
@@ -248,9 +259,6 @@ li {
         display: block;
     }
 
-    /* .cardImg {
-        height: 300px!important;
-    } */
     .vertical-timeline-element-icon {
         width: 35px!important;
         height: 35px!important;
@@ -408,10 +416,11 @@ li {
 .projectBorder {
     border-radius: 15px !important;
 }
-/* 
+
 .cardImg {
-    height: 500px;
-} */
+    max-width: 75%;
+    margin-top: 2%;
+}
 
 .projectCard:hover {
     box-shadow: 5px 5px 10px;
