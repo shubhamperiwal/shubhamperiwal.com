@@ -16,7 +16,7 @@ class Header extends Component {
 
         this.state = {
             isNavOpen: false,
-            images: props.images,
+            scrollClass: ""
         };
 
         this.headerIcons = {
@@ -31,6 +31,23 @@ class Header extends Component {
         this.toggleNav = this.toggleNav.bind(this);
         this.handleLinkClick = this.handleLinkClick.bind(this);
     }
+
+    componentDidMount(){
+        window.addEventListener("scroll", this.handleScroll);
+      }
+      
+      handleScroll=()=>{
+        if (window.pageYOffset > 0) {
+            if(!this.state.scrollClass){
+              this.setState({ scrollClass: "navbarScollClass" });   
+            }
+        }else{
+            if(this.state.scrollClass){
+              this.setState({ scrollClass: "" });
+            }
+        }
+       
+      }
 
     toggleNav() {
         this.setState({
@@ -56,7 +73,6 @@ class Header extends Component {
                 >
                     <div className="row">
                         <div className="col col-sm-offset-4 col-sm-4 col-md-12 headerCol">
-                            {/* <img className="headerImg" src={img} alt="Image" /> */}
                             <FontAwesomeIcon icon={icon} size={"3x"} className={iconClassName}/>
                         </div>
                         <div className="col col-sm-6 col-md-12 headerCol">
@@ -84,12 +100,11 @@ class Header extends Component {
             <>
                 <Navbar
                     dark
-                    className="navbarClass"
+                    className={"navbarClass "+this.state.scrollClass}
                     expand="md"
                     style={{ width: "100%", whiteSpace: "nowrap", zIndex: "999" }}
                     sticky={"top"}
                 >
-                    {/* Or can use arrow function in onClick */}
                     <NavbarToggler
                         className="float-xs-right"
                         style={{
@@ -98,7 +113,6 @@ class Header extends Component {
                         }}
                         onClick={this.toggleNav}
                     />
-                    {/* if false then hidden else shown */}
                     <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar style={{ width: "100%"}}>
                                 {pages.map((page, index) => {

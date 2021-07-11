@@ -61,7 +61,7 @@ export default function () {
                     score: 5,
                 },
                 {
-                    title: "JavaScript (Vanilla | React | Node)",
+                    title: "JavaScript (React | Node)",
                     score: 5,
                 },
                 {

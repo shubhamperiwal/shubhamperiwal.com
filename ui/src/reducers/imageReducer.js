@@ -38,6 +38,9 @@ export default function () {
             project: AWS_BASE_HANDWRITTEN + "hwBook.png",
             achievements: AWS_BASE_HANDWRITTEN + "hwAchievements.png",
             certificates: AWS_BASE_HANDWRITTEN + "hwCertificates.png",
+            workingTowards: AWS_BASE_HANDWRITTEN + "hwWorkingTowards.png",
+            currentlyReading: AWS_BASE_HANDWRITTEN + "hwCurrentlyReading.png",
+            justFinished: AWS_BASE_HANDWRITTEN + "hwJustFinished.png",
         },
         footer: {
             email: AWS_BASE_FOOTER + "drawEmail.png",

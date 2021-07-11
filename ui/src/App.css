@@ -142,7 +142,7 @@ li {
 /* Home Page */
 
 .homeJumbotron {
-    background-image: url("https://website-sp-images.s3-ap-southeast-1.amazonaws.com/home/homeJumbotron.png");
+    background-image: url("https://website-sp-images.s3-ap-southeast-1.amazonaws.com/home/Untitled_Artwork.png");
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -312,10 +312,6 @@ li {
         margin: auto;
     }
 
-    /* .headerIcon {
-        margin-left: 15%!important;
-    } */
-
     .headerTitle {
         font-size: 15px;
     }
@@ -328,9 +324,11 @@ li {
 }
 
 .navbarClass {
-    /* background-color: var(--header_bg) !important; */
-    /* background-color: rgba(0,0,0, 0.3) !important; */
     color: whitesmoke;
+}
+
+.navbarScollClass {
+    background-color: rgba(0,0,0, 0.3) !important;
 }
 
 .App-header {
@@ -387,7 +385,6 @@ li {
 
 .navbar-dark {
     background-color: transparent;
-    /* opacity: 0.7; */
     padding-bottom: 20px;
     font-size: 16px;
 }

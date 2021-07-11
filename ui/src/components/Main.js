@@ -56,7 +56,6 @@ class Main extends Component {
                         onChangeLink={this.handleChangeLink}
                     />
                     <Switch>
-                        {/* path ending with home */}
                         <Route
                             path="/"
                             exact

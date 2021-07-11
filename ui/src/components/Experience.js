@@ -226,6 +226,7 @@ class Experience extends Component {
                             src={images.handwritten.languages}
                             alt="Languages - Shubham Periwal"
                             className="handwriting"
+                            style={{paddingTop: "10px"}}
                         />
                         <div className="skillsTableDiv">
                             {this.renderSkills(user.about.languages)}
@@ -234,6 +235,7 @@ class Experience extends Component {
                             src={images.handwritten.skills}
                             alt="Skills - Shubham Periwal"
                             className="handwriting"
+                            style={{paddingTop: "10px"}}
                         />
                         <div className="skillsTableDiv">
                             {this.renderSkills(user.about.skills)}

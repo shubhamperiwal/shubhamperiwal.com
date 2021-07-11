@@ -29,8 +29,8 @@ export default function () {
             img: "tarzan",
             description: (
                 <>
-                    Eight Principles for Pivoting Through Disruption <br />
-                    Written by the former chief economist of Spotify
+                    Written by the former chief economist of Spotify. <br /> <br/>
+                    This book uses the media industry as an example to talk about technological disruption and how we should not be too hung up on the <i>old vine</i> and be ready to take a leap to the <i>new one</i>.
                 </>
             ),
         },

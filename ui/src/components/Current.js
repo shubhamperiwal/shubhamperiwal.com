@@ -11,7 +11,7 @@ import {
     Button,
 } from "reactstrap";
 import { connect } from "react-redux";
-import 'bootstrap/dist/css/bootstrap.css';
+import "bootstrap/dist/css/bootstrap.css";
 
 class Current extends Component {
     constructor(props) {
@@ -56,11 +56,21 @@ class Current extends Component {
     }
 
     handleSelectBook(title, img, body) {
-        this.setState({ showModal: true, modalTitle: title, modalBody: body, modalImg: img });
+        this.setState({
+            showModal: true,
+            modalTitle: title,
+            modalBody: body,
+            modalImg: img,
+        });
     }
 
     handleCloseModal() {
-        this.setState({ showModal: false, modalTitle: "", modalBody: "", modalImg: "" });
+        this.setState({
+            showModal: false,
+            modalTitle: "",
+            modalBody: "",
+            modalImg: "",
+        });
     }
 
     renderCardOverlay(title, img, body) {
@@ -77,23 +87,22 @@ class Current extends Component {
         );
     }
     render() {
-        const images = this.props.images["current"];
+        const images = this.props.images;
         const current = this.props.current;
         return (
             <>
                 <div className="upcomingGoalBody">
                     <div className="wideContainer">
-                        {/* <img
-                            src={images.handwritten.project}
-                            alt="Project - Shubham Periwal"
+                        <img
+                            src={images.handwritten.workingTowards}
+                            alt="Currently Working Towards - Shubham Periwal"
                             className="handwriting"
-                        /> */}
-                        <h2>Currently Working Towards...</h2>
+                        />
                         <hr />
                         <div className="row" style={{ marginBottom: "30px" }}>
                             {this.renderCard(
                                 current.upcomingGoal["title"],
-                                images[current.upcomingGoal["img"]],
+                                images.current[current.upcomingGoal["img"]],
                                 current.upcomingGoal["description"],
                                 "currentImg"
                             )}
@@ -104,7 +113,11 @@ class Current extends Component {
                     <div className="wideContainer">
                         <div className="row">
                             <div className="col-12 col-md-6">
-                                <h2>Currently Reading</h2>
+                                <img
+                                    src={images.handwritten.currentlyReading}
+                                    alt="Currently Reading - Shubham Periwal"
+                                    className="handwriting"
+                                />
                                 <hr />
                                 <div
                                     className="row"
@@ -112,14 +125,20 @@ class Current extends Component {
                                 >
                                     {this.renderCard(
                                         current.currentRead["title"],
-                                        images[current.currentRead["img"]],
+                                        images.current[
+                                            current.currentRead["img"]
+                                        ],
                                         current.currentRead["description"],
                                         ""
                                     )}
                                 </div>
                             </div>
                             <div className="col-12 col-md-6">
-                                <h2>Latest 3 Books Read</h2>
+                                <img
+                                    src={images.handwritten.justFinished}
+                                    alt="Just Finished - Shubham Periwal"
+                                    className="handwriting"
+                                />
                                 <hr />
                                 <div
                                     className="row"
@@ -134,7 +153,7 @@ class Current extends Component {
                                             >
                                                 {this.renderCardOverlay(
                                                     ele["title"],
-                                                    images[ele["img"]],
+                                                    images.current[ele["img"]],
                                                     ele["description"]
                                                 )}
                                             </div>
@@ -144,11 +163,20 @@ class Current extends Component {
                             </div>
                         </div>
                     </div>
-                    <Modal isOpen={this.state.showModal} toggle={this.handleCloseModal}>
-                        <ModalHeader toggle={this.handleCloseModal}>{this.state.modalTitle}</ModalHeader>
+                    <Modal
+                        isOpen={this.state.showModal}
+                        toggle={this.handleCloseModal}
+                    >
+                        <ModalHeader toggle={this.handleCloseModal}>
+                            {this.state.modalTitle}
+                        </ModalHeader>
                         <ModalBody>
-                            <img src={this.state.modalImg} alt={this.state.modalTitle} style={{maxHeight: "30vh"}}/>
-                            <br/> <br/>
+                            <img
+                                src={this.state.modalImg}
+                                alt={this.state.modalTitle}
+                                style={{ maxHeight: "30vh" }}
+                            />
+                            <br /> <br />
                             {this.state.modalBody}
                         </ModalBody>
                         <ModalFooter>
