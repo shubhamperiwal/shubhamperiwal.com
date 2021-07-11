@@ -66,7 +66,7 @@ class Home extends Component {
                         <img
                             src={images.handwritten.about}
                             alt="About me - Shubham Periwal"
-                            style={{ maxWidth: "100%", maxHeight: "75px" }}
+                            className="handwriting"
                         />
                         <hr />
                         <div className="row">
@@ -94,7 +94,7 @@ class Home extends Component {
                         <img
                             src={images.handwritten.interest}
                             alt = "Interests - Shubham Periwal"
-                            style={{ maxWidth: "100%", maxHeight: "75px" }}
+                            className="handwriting"
                         />
                         <div className="row rowNoMargin">
                             {user.about.interests.map((interest) => {

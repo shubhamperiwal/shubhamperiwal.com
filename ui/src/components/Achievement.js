@@ -64,12 +64,11 @@ class Achievement extends Component {
             <>
                 <div className="projectBody">
                     <div className="wideContainer">
-                        {/* <img
-                            src={images.handwritten.project}
-                            alt="Project - Shubham Periwal"
-                            style={{ maxWidth: "100%", maxHeight: "75px" }}
-                        /> */}
-                        <h2>Achievements</h2>
+                        <img
+                            src={images.handwritten.achievements}
+                            alt="Achievements - Shubham Periwal"
+                            className="handwriting"
+                        />
                         <hr />
                         <div className="row" style={{ marginBottom: "30px" }}>
                             {projects.map((ele) => {
@@ -92,7 +91,11 @@ class Achievement extends Component {
                 </div>
                 <div className="certificateBody">
                     <div className="wideContainer">
-                        <h2>Certificates</h2>
+                        <img
+                            src={images.handwritten.certificates}
+                            alt="Certificates - Shubham Periwal"
+                            className="handwriting"
+                        />
                         <hr />
                         <div className="row" style={{ marginBottom: "30px" }}>
                             {certificates.map((ele) => {

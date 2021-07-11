@@ -32,9 +32,12 @@ export default function () {
             contact: AWS_BASE_HANDWRITTEN + "hwContact.png",
             education: AWS_BASE_HANDWRITTEN + "hwEducation.png",
             experience: AWS_BASE_HANDWRITTEN + "hwExperience.png",
-            skill: AWS_BASE_HANDWRITTEN + "hwSkills.png",
+            skills: AWS_BASE_HANDWRITTEN + "hwSkills.png",
+            languages: AWS_BASE_HANDWRITTEN + "hwLanguages.png",
             tool: AWS_BASE_HANDWRITTEN + "hwTools.png",
             project: AWS_BASE_HANDWRITTEN + "hwBook.png",
+            achievements: AWS_BASE_HANDWRITTEN + "hwAchievements.png",
+            certificates: AWS_BASE_HANDWRITTEN + "hwCertificates.png",
         },
         footer: {
             email: AWS_BASE_FOOTER + "drawEmail.png",

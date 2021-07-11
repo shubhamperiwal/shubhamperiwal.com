@@ -86,7 +86,7 @@ class Current extends Component {
                         {/* <img
                             src={images.handwritten.project}
                             alt="Project - Shubham Periwal"
-                            style={{ maxWidth: "100%", maxHeight: "75px" }}
+                            className="handwriting"
                         /> */}
                         <h2>Currently Working Towards...</h2>
                         <hr />
