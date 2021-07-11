@@ -39,10 +39,7 @@ class Experience extends Component {
 
     renderSkills(skills) {
         return (
-            <div
-                className="row"
-                style={{ marginTop: "10px" }}
-            >
+            <div className="row" style={{ marginTop: "10px" }}>
                 {skills.map((skill) => {
                     return (
                         <>
@@ -51,7 +48,7 @@ class Experience extends Component {
                                 key={skill["title"]}
                                 style={{
                                     textAlign: "left",
-                                    marginTop: "5px"
+                                    marginTop: "5px",
                                 }}
                             >
                                 {skill["title"]}
@@ -170,7 +167,7 @@ class Experience extends Component {
                         <img
                             src={images.handwritten.experience}
                             alt={"Experience - Shubham Periwal"}
-                            style={{ maxWidth: "100%", maxHeight: "75px" }}
+                            className="handwriting"
                         />
                         <hr />
                         <VerticalTimeline
@@ -199,7 +196,7 @@ class Experience extends Component {
                         <img
                             src={images.handwritten.education}
                             alt="Education - Shubham Periwal"
-                            style={{ maxWidth: "100%", maxHeight: "75px" }}
+                            className="handwriting"
                         />
                         <hr />
                         <VerticalTimeline
@@ -225,19 +222,21 @@ class Experience extends Component {
                 </div>
                 <div id="skillsDiv" style={{ justifyContent: "center" }}>
                     <div className="wideContainer">
-                        {/* <img
-                            src={images.handwritten.skill}
-                            style={{ maxWidth: "100%", maxHeight: "75px" }}
-                        /> */}
-                        <h3>Languages</h3>
+                        <img
+                            src={images.handwritten.languages}
+                            alt="Languages - Shubham Periwal"
+                            className="handwriting"
+                            style={{paddingTop: "10px"}}
+                        />
                         <div className="skillsTableDiv">
                             {this.renderSkills(user.about.languages)}
                         </div>
-                        {/* <img
-                            src={images.handwritten.tool}
-                            style={{ maxWidth: "100%", maxHeight: "75px" }}
-                        /> */}
-                        <h3>Skills</h3>
+                        <img
+                            src={images.handwritten.skills}
+                            alt="Skills - Shubham Periwal"
+                            className="handwriting"
+                            style={{paddingTop: "10px"}}
+                        />
                         <div className="skillsTableDiv">
                             {this.renderSkills(user.about.skills)}
                         </div>

@@ -6,6 +6,7 @@ export default function () {
     const AWS_BASE_HANDWRITTEN = AWS_BASE + "handwritten/";
     const AWS_BASE_PROJECT = AWS_BASE + "project/";
     const AWS_BASE_CERTIFICATE = AWS_BASE + "certificate/";
+    const AWS_BASE_CURRENT = AWS_BASE + "current/";
     const AWS_BASE_FOOTER = AWS_BASE + "footer/";
     return {
         base: AWS_BASE,
@@ -31,9 +32,15 @@ export default function () {
             contact: AWS_BASE_HANDWRITTEN + "hwContact.png",
             education: AWS_BASE_HANDWRITTEN + "hwEducation.png",
             experience: AWS_BASE_HANDWRITTEN + "hwExperience.png",
-            skill: AWS_BASE_HANDWRITTEN + "hwSkills.png",
+            skills: AWS_BASE_HANDWRITTEN + "hwSkills.png",
+            languages: AWS_BASE_HANDWRITTEN + "hwLanguages.png",
             tool: AWS_BASE_HANDWRITTEN + "hwTools.png",
             project: AWS_BASE_HANDWRITTEN + "hwBook.png",
+            achievements: AWS_BASE_HANDWRITTEN + "hwAchievements.png",
+            certificates: AWS_BASE_HANDWRITTEN + "hwCertificates.png",
+            workingTowards: AWS_BASE_HANDWRITTEN + "hwWorkingTowards.png",
+            currentlyReading: AWS_BASE_HANDWRITTEN + "hwCurrentlyReading.png",
+            justFinished: AWS_BASE_HANDWRITTEN + "hwJustFinished.png",
         },
         footer: {
             email: AWS_BASE_FOOTER + "drawEmail.png",
@@ -56,6 +63,13 @@ export default function () {
             mlPython:AWS_BASE_CERTIFICATE + "mlPython.png",
             kdb:AWS_BASE_CERTIFICATE + "kdb.jpeg",
             mensa:AWS_BASE_CERTIFICATE + "mensa.png"
+        },
+        current: {
+            cfa:AWS_BASE_CURRENT + "cfa.png",
+            tarzan: AWS_BASE_CURRENT+"tarzan.jpeg",
+            hockeyStick: AWS_BASE_CURRENT+"hockeyStick.jpeg",
+            monk: AWS_BASE_CURRENT+"monk.jpeg",
+            noFilter: AWS_BASE_CURRENT+"noFilter.jpeg"
         }
     };
 }

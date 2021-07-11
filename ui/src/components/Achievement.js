@@ -4,11 +4,6 @@ import { connect } from "react-redux";
 class Achievement extends Component {
     constructor(props) {
         super(props);
-
-        this.state = {
-            images: props.images,
-            projects: props.projects,
-        };
     }
 
     componentDidMount() {
@@ -61,35 +56,19 @@ class Achievement extends Component {
         );
     }
     render() {
-        const { images } = this.state;
-        const projects = this.state.projects.projects;
-        const certificates = this.state.projects.certificates;
-        const projects2d = projects.reduce(function (rows, key, index) {
-            return (
-                (index % 4 == 0
-                    ? rows.push([key])
-                    : rows[rows.length - 1].push(key)) && rows
-            );
-        }, []);
-
-        const certificates2d = certificates.reduce(function (rows, key, index) {
-            return (
-                (index % 4 == 0
-                    ? rows.push([key])
-                    : rows[rows.length - 1].push(key)) && rows
-            );
-        }, []);
+        const images = this.props.images;
+        const projects = this.props.achievements.projects;
+        const certificates = this.props.achievements.certificates;
 
         return (
             <>
                 <div className="projectBody">
                     <div className="wideContainer">
-                        {/* <img
-                            src={images.handwritten.project}
-                            alt="Project - Shubham Periwal"
-                            style={{ maxWidth: "100%", maxHeight: "75px" }}
-                        /> */}
-                        <h2>Achievements</h2>
+                        <img
+                            src={images.handwritten.achievements}
+                            alt="Achievements - Shubham Periwal"
+                            className="handwriting"
+                        />
                         <hr />
                         <div className="row" style={{ marginBottom: "30px" }}>
                             {projects.map((ele) => {
@@ -112,7 +91,11 @@ class Achievement extends Component {
                 </div>
                 <div className="certificateBody">
                     <div className="wideContainer">
-                        <h2>Certificates</h2>
+                        <img
+                            src={images.handwritten.certificates}
+                            alt="Certificates - Shubham Periwal"
+                            className="handwriting"
+                        />
                         <hr />
                         <div className="row" style={{ marginBottom: "30px" }}>
                             {certificates.map((ele) => {
@@ -142,10 +125,9 @@ class Achievement extends Component {
 }
 
 function mapStateToProps(state) {
-    //so now these props are directly available in the component
     return {
         images: state.images,
-        projects: state.projects,
+        achievements: state.achievements,
     };
 }
 

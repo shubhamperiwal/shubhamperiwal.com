@@ -56,7 +56,10 @@
     --project_body_bg: #cce4d5;
     /* Certificate background */
     --certificate_body_bg: #337772;
-
+    /* Upcoming goals background */
+    --upcoming_goal_bg: #cce4d5;
+    /* Current books background */
+    --current_books_bg: #337772;
     /* Font sizes */
     --small_font_size: 15px;
     /* font size */
@@ -111,6 +114,11 @@ li {
     color: var(--header_active);
 }
 
+.handwriting {
+    max-width: 100%;
+    max-height: 75px;
+}
+
 /* Footer */
 
 .footer {
@@ -134,7 +142,7 @@ li {
 /* Home Page */
 
 .homeJumbotron {
-    background-image: url("https://website-sp-images.s3-ap-southeast-1.amazonaws.com/home/homeJumbotron.jpg");
+    background-image: url("https://website-sp-images.s3-ap-southeast-1.amazonaws.com/home/Untitled_Artwork.png");
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -208,6 +216,14 @@ li {
     background-color: var(--certificate_body_bg);
     padding: 10px 0 10px 0;
 }
+.upcomingGoalBody {
+    background-color: var(--upcoming_goal_bg);
+    padding: 10px 0 10px 0;
+}
+.currentBooksBody {
+    background-color: var(--current_books_bg);
+    padding: 10px 0 10px 0;
+}
 .App {
     text-align: center;
 }
@@ -248,9 +264,6 @@ li {
         display: block;
     }
 
-    /* .cardImg {
-        height: 300px!important;
-    } */
     .vertical-timeline-element-icon {
         width: 35px!important;
         height: 35px!important;
@@ -299,10 +312,6 @@ li {
         margin: auto;
     }
 
-    /* .headerIcon {
-        margin-left: 15%!important;
-    } */
-
     .headerTitle {
         font-size: 15px;
     }
@@ -315,9 +324,11 @@ li {
 }
 
 .navbarClass {
-    /* background-color: var(--header_bg) !important; */
-    background-color: rgba(0,0,0, 0.3) !important;
     color: whitesmoke;
+}
+
+.navbarScollClass {
+    background-color: rgba(0,0,0, 0.3) !important;
 }
 
 .App-header {
@@ -369,11 +380,11 @@ li {
 
 .navbar {
     max-width: 100%;
+    background-color: transparent;
 }
 
 .navbar-dark {
     background-color: transparent;
-    /* opacity: 0.7; */
     padding-bottom: 20px;
     font-size: 16px;
 }
@@ -408,11 +419,15 @@ li {
 .projectBorder {
     border-radius: 15px !important;
 }
-/* 
-.cardImg {
-    height: 500px;
-} */
 
+.currentImg {
+    max-width: 75%;
+    margin-top: 2%;
+}
+
+.booksCardImg {
+    box-shadow: 5px 5px 10px;
+}
 .projectCard:hover {
     box-shadow: 5px 5px 10px;
 }
@@ -464,6 +479,10 @@ li {
 
 .skillsTableDiv {
     margin-left: 5%;
+}
+
+.interestBackDescription {
+    font-size: 15px!important;
 }
 
 .interestFront,
