@@ -1,9 +1,30 @@
 import React, { Component } from "react";
-import { Card, CardImg, CardTitle, CardBody, CardSubtitle } from "reactstrap";
+import {
+    Card,
+    CardImg,
+    CardBody,
+    CardSubtitle,
+    Modal,
+    ModalHeader,
+    ModalBody,
+    ModalFooter,
+    Button,
+} from "reactstrap";
 import { connect } from "react-redux";
+import 'bootstrap/dist/css/bootstrap.css';
+
 class Current extends Component {
     constructor(props) {
         super(props);
+
+        this.state = {
+            showModal: false,
+            modalTitle: "",
+            modalBody: "",
+        };
+
+        this.handleSelectBook = this.handleSelectBook.bind(this);
+        this.handleCloseModal = this.handleCloseModal.bind(this);
     }
 
     componentDidMount() {
@@ -16,7 +37,7 @@ class Current extends Component {
                 <div className="row no-gutters">
                     <div className="col-4" style={{ textAlign: "center" }}>
                         <CardImg
-                            className={"projectBorder "+className}
+                            className={"projectBorder " + className}
                             src={img}
                             alt={title}
                         />
@@ -30,6 +51,28 @@ class Current extends Component {
                         </CardBody>
                     </div>
                 </div>
+            </Card>
+        );
+    }
+
+    handleSelectBook(title, img, body) {
+        this.setState({ showModal: true, modalTitle: title, modalBody: body, modalImg: img });
+    }
+
+    handleCloseModal() {
+        this.setState({ showModal: false, modalTitle: "", modalBody: "", modalImg: "" });
+    }
+
+    renderCardOverlay(title, img, body) {
+        return (
+            <Card className="booksCard" style={{ border: "none" }}>
+                <CardImg
+                    className="booksCardImg"
+                    src={img}
+                    style={{ maxWidth: "100%" }}
+                    alt={title}
+                    onClick={() => this.handleSelectBook(title, img, body)}
+                />
             </Card>
         );
     }
@@ -52,7 +95,7 @@ class Current extends Component {
                                 current.upcomingGoal["title"],
                                 images[current.upcomingGoal["img"]],
                                 current.upcomingGoal["description"],
-                                "cardImg"
+                                "currentImg"
                             )}
                         </div>
                     </div>
@@ -89,7 +132,11 @@ class Current extends Component {
                                                 key={ele["title"]}
                                                 style={{ marginTop: "10px" }}
                                             >
-                                                <img src={images[ele["img"]]} style={{maxWidth: "100%"}}/>
+                                                {this.renderCardOverlay(
+                                                    ele["title"],
+                                                    images[ele["img"]],
+                                                    ele["description"]
+                                                )}
                                             </div>
                                         );
                                     })}
@@ -97,6 +144,22 @@ class Current extends Component {
                             </div>
                         </div>
                     </div>
+                    <Modal isOpen={this.state.showModal} toggle={this.handleCloseModal}>
+                        <ModalHeader toggle={this.handleCloseModal}>{this.state.modalTitle}</ModalHeader>
+                        <ModalBody>
+                            <img src={this.state.modalImg} alt={this.state.modalTitle} style={{maxHeight: "30vh"}}/>
+                            <br/> <br/>
+                            {this.state.modalBody}
+                        </ModalBody>
+                        <ModalFooter>
+                            <Button
+                                color="secondary"
+                                onClick={this.handleCloseModal}
+                            >
+                                Close
+                            </Button>
+                        </ModalFooter>
+                    </Modal>
                 </div>
             </>
         );

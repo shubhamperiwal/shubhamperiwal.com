@@ -417,11 +417,14 @@ li {
     border-radius: 15px !important;
 }
 
-.cardImg {
+.currentImg {
     max-width: 75%;
     margin-top: 2%;
 }
 
+.booksCardImg {
+    box-shadow: 5px 5px 10px;
+}
 .projectCard:hover {
     box-shadow: 5px 5px 10px;
 }
@@ -473,6 +476,10 @@ li {
 
 .skillsTableDiv {
     margin-left: 5%;
+}
+
+.interestBackDescription {
+    font-size: 15px!important;
 }
 
 .interestFront,

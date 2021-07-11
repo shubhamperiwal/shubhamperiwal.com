@@ -8,7 +8,7 @@ import {
     faTableTennis,
     faRunning,
     faPlaneDeparture,
-    faHiking,
+    faMountain,
 } from "@fortawesome/free-solid-svg-icons";
 import { connect } from "react-redux";
 
@@ -28,7 +28,7 @@ class Home extends Component {
             "Working Out": faDumbbell,
             Running: faRunning,
             Travelling: faPlaneDeparture,
-            Hiking: faHiking
+            Hiking: faMountain
         };
     }
 
@@ -58,7 +58,6 @@ class Home extends Component {
 
     render() {
         const { user, images } = this.state;
-        console.log(this.state);
         return (
             <>
                 <div className="homeJumbotron" style={{ width: "100%" }} />

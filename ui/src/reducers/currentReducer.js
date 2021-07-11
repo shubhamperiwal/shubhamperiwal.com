@@ -36,19 +36,19 @@ export default function () {
         },
         latestRead: [
             {
-                title: "Strategy Beyond the hockey Stick",
+                title: "Strategy Beyond the Hockey Stick",
                 img: "hockeyStick",
-                description: <>Strategy Beyond the hockey Stick</>,
+                description: <i>Not making big moves and making only incremental improvements is a sure shot way of getting left behind</i>,
             },
             {
                 title: "Think like a Monk",
                 img: "monk",
-                description: <>Think like a monk</>,
+                description: <i>"It is not possible to control all external events but if I simply control my mind, what need is there to control external events"</i>,
             },
             {
                 title: "No filter",
                 img: "noFilter",
-                description: <>No Filter</>,
+                description: <i>Focusing on doing good things and setting values should be prioritized above growth and making more money.</i>,
             },
         ],
     };
