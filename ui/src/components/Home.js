@@ -4,10 +4,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faBookReader,
     faDumbbell,
-    faStar,
     faLaptop,
     faTableTennis,
     faRunning,
+    faPlaneDeparture,
+    faHiking,
 } from "@fortawesome/free-solid-svg-icons";
 import { connect } from "react-redux";
 
@@ -26,6 +27,8 @@ class Home extends Component {
             Sports: faTableTennis,
             "Working Out": faDumbbell,
             Running: faRunning,
+            Travelling: faPlaneDeparture,
+            Hiking: faHiking
         };
     }
 

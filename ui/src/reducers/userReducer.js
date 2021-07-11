@@ -42,6 +42,14 @@ export default function () {
                     title: "Running",
                     description: "Search for a run buddy...",
                 },
+                {
+                    title: "Travelling",
+                    description: "Culture shock is my favorite shock",
+                },
+                {
+                    title: "Hiking",
+                    description: "The higher the better",
+                },
             ],
             languages: [
                 {
