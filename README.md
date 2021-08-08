@@ -1,2 +1,9 @@
 # shubhamperiwal.com
-Repository holding the code for my personal website
+
+Code written in React
+
+Hosted on AWS using
+- S3
+- CodePipeline
+- Key Management System
+- Route 53
