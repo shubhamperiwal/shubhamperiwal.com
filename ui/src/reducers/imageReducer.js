@@ -69,7 +69,9 @@ export default function () {
             tarzan: AWS_BASE_CURRENT+"tarzan.jpeg",
             hockeyStick: AWS_BASE_CURRENT+"hockeyStick.jpeg",
             monk: AWS_BASE_CURRENT+"monk.jpeg",
-            noFilter: AWS_BASE_CURRENT+"noFilter.jpeg"
+            noFilter: AWS_BASE_CURRENT+"noFilter.jpeg",
+            netflix: AWS_BASE_CURRENT+"netflix.jpeg",
+            range: AWS_BASE_CURRENT+"range.jpeg",
         }
     };
 }

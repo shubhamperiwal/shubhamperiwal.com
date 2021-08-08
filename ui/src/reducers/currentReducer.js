@@ -31,30 +31,32 @@ export default function () {
             ),
         },
         currentRead: {
-            title: "Tarzan Economics",
-            img: "tarzan",
+            title: "Range",
+            img: "range",
             description: (
                 <>
-                    Written by the former chief economist of Spotify. <br />{" "}
-                    <br />
-                    This book uses the media industry as an example to talk
-                    about technological disruption and how we should not be too
-                    hung up on the <i>old vine</i> and be ready to take a leap
-                    to the <i>new vine</i>. <br /> <br/>
-                    It also points out various biases <i>(eg: Quantification bias)</i> regarding big data and
-                    other statistical analyses which we must keep in mind before
-                    trusting them blindly.
+                    <i>“We learn who we are in practice, not in theory."</i><br/><br/>
+                    The most impactful inventors cross domains rather than deepening their knowledge in a single area .
                 </>
             ),
         },
         latestRead: [
             {
-                title: "Strategy Beyond the Hockey Stick",
-                img: "hockeyStick",
+                title: "Tarzan Economics",
+                img: "tarzan",
                 description: (
                     <i>
-                        Not making big moves and making only incremental
-                        improvements is a sure shot way of getting left behind
+                        The 'curse of knowledge' is the misplaced assumption that the people around us share the same knowledge
+                        in an area where we have developed our expertise
+                    </i>
+                ),
+            },
+            {
+                title: "That will never work",
+                img: "netflix",
+                description: (
+                    <i>
+                        You're going to get things wrong. You just don't want to get the same things wrong twice.
                     </i>
                 ),
             },
@@ -66,16 +68,6 @@ export default function () {
                         "It is not possible to control all external events but
                         if I simply control my mind, what need is there to
                         control external events"
-                    </i>
-                ),
-            },
-            {
-                title: "No filter",
-                img: "noFilter",
-                description: (
-                    <i>
-                        Focusing on doing good things and setting values should
-                        be prioritized above growth and making more money.
                     </i>
                 ),
             },
