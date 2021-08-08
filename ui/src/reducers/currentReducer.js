@@ -35,10 +35,8 @@ export default function () {
             img: "range",
             description: (
                 <>
-                    The most impactful inventors cross domains rather than deepening their knowledge in a single area <br/><br/>
-                    As experts silo themselves further while computers master more of the skills once reserved for highly focused humans, 
-                    people who think broadly and embrace diverse experiences and perspectives will increasingly thrive. <br/><br/>
-                    <i>“We learn who we are in practice, not in theory."</i>
+                    <i>“We learn who we are in practice, not in theory."</i><br/><br/>
+                    The most impactful inventors cross domains rather than deepening their knowledge in a single area .
                 </>
             ),
         },

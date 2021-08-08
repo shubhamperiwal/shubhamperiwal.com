@@ -89,7 +89,7 @@ class Current extends Component {
     render() {
         const images = this.props.images;
         const current = this.props.current;
-        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        const options = { year: 'numeric', month: 'short', day: 'numeric' };
         const today = new Date().toLocaleDateString("en-IN", options)
         return (
             <>
@@ -114,13 +114,13 @@ class Current extends Component {
                 <div className="currentBooksBody">
                     <div className="wideContainer">
                         <div className="row">
-                            <div className="col-12 col-md-6">
+                            <div className="col-12 col-lg-5">
                                 <img
                                     src={images.handwritten.currentlyReading}
                                     alt="Currently Reading - Shubham Periwal"
                                     className="handwriting"
                                 />
-                                <span style={{marginLeft: "5px"}}><i>Last updated on {today}</i></span>
+                                <span style={{marginLeft: "5px"}}><i>({today})</i></span>
                                 <hr />
                                 <div
                                     className="row"
@@ -136,7 +136,7 @@ class Current extends Component {
                                     )}
                                 </div>
                             </div>
-                            <div className="col-12 col-md-6">
+                            <div className="col-12 col-lg-7">
                                 <img
                                     src={images.handwritten.justFinished}
                                     alt="Just Finished - Shubham Periwal"
