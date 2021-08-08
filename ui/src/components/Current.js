@@ -89,6 +89,8 @@ class Current extends Component {
     render() {
         const images = this.props.images;
         const current = this.props.current;
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        const today = new Date().toLocaleDateString("en-IN", options)
         return (
             <>
                 <div className="upcomingGoalBody">
@@ -118,6 +120,7 @@ class Current extends Component {
                                     alt="Currently Reading - Shubham Periwal"
                                     className="handwriting"
                                 />
+                                <span style={{marginLeft: "5px"}}><i>Last updated on {today}</i></span>
                                 <hr />
                                 <div
                                     className="row"
