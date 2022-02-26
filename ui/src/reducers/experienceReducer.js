@@ -18,18 +18,15 @@ export default function () {
                 description: (
                     <>
                         <br />
-                        Highlight:
-                        <br />
-                        Part of{" "}
+                        Associate in {" "}
                         <b>
-                            "Fixed Income - Systematic Investments Group" )
+                            "Fixed Income - Systematic Investments Group"
                         </b>{" "}
                         <br />
                         Sitting at the prime intersection of Finance and
-                        Technology, my role is not only to build but also to
-                        come up with solutions which makes the lives of
-                        Portfolio Managers simpler and helps them gain
-                        additional alpha <br />
+                        Technology, my role is not only to design as well as develop solutions which
+                        generate alpha while streamlining processes so the Portfolio Managers can focus
+                        their time on research rather than execution<br />
                         <br />
                         Main Responsibilities:
                         <ul>
@@ -41,15 +38,16 @@ export default function () {
                                 division-wide solutions
                             </li>
                             <li>
-                                Automate operational tasks as much as possible
+                                Generate analytics dashboards to gleam insights from the signals' execution results
                             </li>
                         </ul>
                     </>
                 ),
                 tags: [
-                    "Web Development",
-                    "Solutions Architecture",
                     "Fixed Income",
+                    "Solutions Architecture",
+                    "React",
+                    "Python",
                 ],
             },
             {
@@ -81,12 +79,12 @@ export default function () {
                 date: "Jun 2019 – Aug 2019",
                 img: "gic",
                 title: "GIC",
-                subtitle: "Software Developer cum Data Science Intern",
+                subtitle: "Software Developer / Data Science Intern",
                 description: (
                     <>
                         <br />
-                        It was a 10 week internship and I split my time between
-                        Enterprise Strategy and Internal Audit teams.
+                        It was a 10 week internship and I split my time between the
+                        Technology Group and Internal Audit Department.
                         <ul>
                             <b>Software Development project </b>{" "}
                             <i>(5 weeks):</i>
@@ -218,7 +216,7 @@ export default function () {
                             <li>
                                 Worked in a team of 6 to build a{" "}
                                 {link(
-                                    "website",
+                                    "platform",
                                     "https://explorer.blacksunplc.com/"
                                 )}{" "}
                                 which lets companies upload annual reports and
@@ -258,7 +256,6 @@ export default function () {
                                 Executive Committee - SMU Business Intelligence
                                 and Analytics
                             </li>
-                            <li>Sub Committee - SMU Devera</li>
                         </ul>
                     </>
                 ),

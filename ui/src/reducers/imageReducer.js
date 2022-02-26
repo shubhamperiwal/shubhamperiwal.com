@@ -57,6 +57,7 @@ export default function () {
             emojinator: AWS_BASE_PROJECT + "emojinator.gif",
         },
         certificate: {
+            cfa: AWS_BASE_CERTIFICATE + "cfa.png",
             awsCloud: AWS_BASE_CERTIFICATE + "awsCloud.jpeg",
             dsNano:AWS_BASE_CERTIFICATE + "dsNano.jpeg",
             flutter:AWS_BASE_CERTIFICATE + "flutter.jpeg",
@@ -66,12 +67,14 @@ export default function () {
         },
         current: {
             cfa:AWS_BASE_CURRENT + "cfa.png",
+            gmat:AWS_BASE_CURRENT + "gmat.png",
             tarzan: AWS_BASE_CURRENT+"tarzan.jpeg",
             hockeyStick: AWS_BASE_CURRENT+"hockeyStick.jpeg",
             monk: AWS_BASE_CURRENT+"monk.jpeg",
             noFilter: AWS_BASE_CURRENT+"noFilter.jpeg",
             netflix: AWS_BASE_CURRENT+"netflix.jpeg",
             range: AWS_BASE_CURRENT+"range.jpeg",
+            superPumped: AWS_BASE_CURRENT+"superPumped.jpeg",
         }
     };
 }

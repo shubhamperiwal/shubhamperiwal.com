@@ -111,6 +111,24 @@ export default function () {
         ],
         certificates: [
             {
+                img: "cfa",
+                title: "CFA Level 1",
+                issuer: "CFA",
+                issueDate: "Jan 2022",
+                link:
+                    "https://www.dropbox.com/s/2kedigv9vfmxxlx/CFA%20results.pdf?dl=0",
+                body: (
+                    <>
+                        Cleared CFA Level 1 with greater than 90th percentile. <br/>
+                        View the Exam results{" "}
+                        {link(
+                            "here",
+                            "https://www.dropbox.com/s/2kedigv9vfmxxlx/CFA%20results.pdf?dl=0"
+                        )}
+                    </>
+                ),
+            },
+            {
                 img: "awsCloud",
                 title: "Certified Cloud Practitioner",
                 issuer: "AWS",
