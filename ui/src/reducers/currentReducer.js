@@ -10,33 +10,24 @@ function link(text, link) {
 export default function () {
     return {
         upcomingGoal: {
-            title: "CFA Level 1 Exam",
-            img: "cfa",
+            title: "GMAT (June 2022)",
+            img: "gmat",
             description: (
                 <>
-                    Given that I have had no formal training in Finance
-                    throughout my education, taking on CFA Level 1 will help me
-                    gain the fundamentals of a <b>completely new vertical.</b>
-                    <br />
-                    I can gradually apply what I'm learning during my work in
-                    GIC to serve them even better. <br />
-                    Studying for CFA Level 1 has also helped me gain a better
-                    understanding of my personal finances. <br />
-                    <img
-                        src={
-                            "https://website-sp-images.s3.ap-southeast-1.amazonaws.com/current/nov2021.png"
-                        }
-                    />
+                    My target score would be 760/800 for GMAT so that I can get into the best colleges in the States or the esteemed 
+                    Indian Institute of Management (IIMs) in India. <br/>
+                    Subsequently, I am yet to decide whether I would do a Masters in Business Administration or something more specialised like Masters 
+                    in Financial Engineering. <br/> <br/>
                 </>
             ),
         },
         currentRead: {
-            title: "Range",
-            img: "range",
+            title: "Super Pumped",
+            img: "superPumped",
             description: (
                 <>
-                    <i>“We learn who we are in practice, not in theory."</i><br/><br/>
-                    The most impactful inventors cross domains rather than deepening their knowledge in a single area .
+                    <i>“The law isn’t what is written. It’s what is enforced.”</i><br/><br/>
+                    Definitely worth a read as the book covers everything from Kalanick's unbelievable hustle to the "bro" culture in Silicon Valley
                 </>
             ),
         },
@@ -61,14 +52,12 @@ export default function () {
                 ),
             },
             {
-                title: "Think like a Monk",
-                img: "monk",
+                title: "Range",
+                img: "range",
                 description: (
-                    <i>
-                        "It is not possible to control all external events but
-                        if I simply control my mind, what need is there to
-                        control external events"
-                    </i>
+                    <>
+                    <i>“We learn who we are in practice, not in theory."</i><br/><br/>
+                </>
                 ),
             },
         ],

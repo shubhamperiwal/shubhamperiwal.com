@@ -128,7 +128,7 @@ class Experience extends Component {
                     className="vertical-timeline-element-title"
                     style={{ color: fontColor }}
                 >
-                    {title}
+                    <b>{title}</b>
                 </h4>
                 <div className="vertical-timeline-element-subtitle">
                     <div className="row rowNoMargin">
@@ -136,7 +136,7 @@ class Experience extends Component {
                             className="col-12 col-md-6"
                             style={{ padding: "0px" }}
                         >
-                            <span>{subtitle}</span>
+                            <b>{subtitle}</b>
                         </div>
                         <div
                             className="col-12 col-md-6"
