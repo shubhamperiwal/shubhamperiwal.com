@@ -39,6 +39,7 @@ export default function () {
             achievements: AWS_BASE_HANDWRITTEN + "hwAchievements.png",
             certificates: AWS_BASE_HANDWRITTEN + "hwCertificates.png",
             workingTowards: AWS_BASE_HANDWRITTEN + "hwWorkingTowards.png",
+            recentlyAchieved: AWS_BASE_HANDWRITTEN + "hwRecently.png",
             currentlyReading: AWS_BASE_HANDWRITTEN + "hwCurrentlyReading.png",
             justFinished: AWS_BASE_HANDWRITTEN + "hwJustFinished.png",
         },
