@@ -95,19 +95,41 @@ class Current extends Component {
             <>
                 <div className="upcomingGoalBody">
                     <div className="wideContainer">
+                        <div className="row">
+                    <div className="col-12 col-lg-6">
                         <img
                             src={images.handwritten.workingTowards}
                             alt="Currently Working Towards - Shubham Periwal"
                             className="handwriting"
                         />
-                        <hr />
+                        </div>
+                        <div className="col-12 col-lg-6">
+                        <img
+                            src={images.handwritten.recentlyAchieved}
+                            alt="Currently Working Towards - Shubham Periwal"
+                            className="handwriting"
+                        />
+                        </div>
+                        </div>
                         <div className="row" style={{ marginBottom: "30px" }}>
-                            {this.renderCard(
-                                current.upcomingGoal["title"],
-                                images.current[current.upcomingGoal["img"]],
-                                current.upcomingGoal["description"],
-                                "currentImg"
-                            )}
+                            <div className="col-12 col-lg-6">
+                            <hr />
+                                {this.renderCard(
+                                    current.upcomingGoal["title"],
+                                    images.current[current.upcomingGoal["img"]],
+                                    current.upcomingGoal["description"],
+                                    "currentImg"
+                                )}
+                            </div>
+                            <div className="col-12 col-lg-6">
+                            <hr />
+                                {this.renderCard(
+                                    current.recentGoal["title"],
+                                    images.current[current.recentGoal["img"]],
+                                    current.recentGoal["description"],
+                                    "currentImg"
+                                )}
+                            </div>
                         </div>
                     </div>
                 </div>

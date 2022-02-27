@@ -10,14 +10,20 @@ function link(text, link) {
 export default function () {
     return {
         upcomingGoal: {
-            title: "GMAT (June 2022)",
+            title: "GMAT (June, 2022)",
             img: "gmat",
             description: (
                 <>
-                    My target score would be 760/800 for GMAT so that I can get into the best colleges in the States or the esteemed 
-                    Indian Institute of Management (IIMs) in India. <br/>
-                    Subsequently, I am yet to decide whether I would do a Masters in Business Administration or something more specialised like Masters 
-                    in Financial Engineering. <br/> <br/>
+                    My target score is 760/800. I aim to give the exam in early June 2022<br/>
+                </>
+            ),
+        },
+        recentGoal: {
+            title: "CFA Level 1 (Jan, 2022)",
+            img: "cfa",
+            description: (
+                <>
+                    Most recently, I cleared the CFA Level 1 exam with more than 90th percentile. <br/>
                 </>
             ),
         },
