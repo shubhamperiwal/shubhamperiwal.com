@@ -10,7 +10,7 @@ function link(text, link) {
 export default function () {
     return {
         upcomingGoal: {
-            title: "GMAT (June, 2022)",
+            title: "June, 2022",
             img: "gmat",
             description: (
                 <>
@@ -18,12 +18,12 @@ export default function () {
                 </>
             ),
         },
-        recentGoal: {
-            title: "CFA Level 1 (Jan, 2022)",
+        recentlyAchieved: {
+            title: "Jan, 2022",
             img: "cfa",
             description: (
                 <>
-                    Most recently, I cleared the CFA Level 1 exam with more than 90th percentile. <br/>
+                    Most recently, I cleared the CFA Level 1 exam with more than <a target="_blank" href="https://www.dropbox.com/s/2kedigv9vfmxxlx/CFA%20results.pdf?dl=0"> 90th percentile. </a> <br/>
                 </>
             ),
         },
