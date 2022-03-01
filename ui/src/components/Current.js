@@ -41,12 +41,12 @@ class Current extends Component {
                             src={img}
                             alt={title}
                         />
+                        <p style={{ textAlign: "center", fontSize: "large" }}>
+                            <b>{title}</b>
+                        </p>
                     </div>
                     <div className="col-8">
                         <CardBody>
-                            <CardSubtitle style={{ textAlign: "left" }}>
-                                <b>{title}</b>
-                            </CardSubtitle>
                             {body}
                         </CardBody>
                     </div>
@@ -90,29 +90,20 @@ class Current extends Component {
         const images = this.props.images;
         const current = this.props.current;
         const options = { year: 'numeric', month: 'short', day: 'numeric' };
-        const today = new Date().toLocaleDateString("en-IN", options)
         return (
             <>
                 <div className="upcomingGoalBody">
                     <div className="wideContainer">
                         <div className="row">
                     <div className="col-12 col-lg-6">
+                        <div className="col-10">
                         <img
                             src={images.handwritten.workingTowards}
                             alt="Currently Working Towards - Shubham Periwal"
                             className="handwriting"
                         />
                         </div>
-                        <div className="col-12 col-lg-6">
-                        <img
-                            src={images.handwritten.recentlyAchieved}
-                            alt="Currently Working Towards - Shubham Periwal"
-                            className="handwriting"
-                        />
-                        </div>
-                        </div>
-                        <div className="row" style={{ marginBottom: "30px" }}>
-                            <div className="col-12 col-lg-6">
+                        <div className="col-10">
                             <hr />
                                 {this.renderCard(
                                     current.upcomingGoal["title"],
@@ -121,15 +112,25 @@ class Current extends Component {
                                     "currentImg"
                                 )}
                             </div>
-                            <div className="col-12 col-lg-6">
+                    </div>
+                    <div className="col-12 col-lg-6">
+                        <div className="col-10">
+                        <img
+                            src={images.handwritten.recentlyAchieved}
+                            alt="Recently Achieved - Shubham Periwal"
+                            className="handwriting"
+                        />
+                        </div>
+                        <div className="col-10">
                             <hr />
                                 {this.renderCard(
-                                    current.recentGoal["title"],
-                                    images.current[current.recentGoal["img"]],
-                                    current.recentGoal["description"],
+                                    current.recentlyAchieved["title"],
+                                    images.current[current.recentlyAchieved["img"]],
+                                    current.recentlyAchieved["description"],
                                     "currentImg"
                                 )}
                             </div>
+                    </div>
                         </div>
                     </div>
                 </div>
@@ -142,7 +143,6 @@ class Current extends Component {
                                     alt="Currently Reading - Shubham Periwal"
                                     className="handwriting"
                                 />
-                                <span style={{marginLeft: "5px"}}><i>({today})</i></span>
                                 <hr />
                                 <div
                                     className="row"
