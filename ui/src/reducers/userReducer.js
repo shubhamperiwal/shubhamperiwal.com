@@ -50,6 +50,10 @@ export default function () {
                     title: "Hiking",
                     description: "The higher the better",
                 },
+                {
+                    title: "Blockchain",
+                    description: "The coins and the underlying framework",
+                },
             ],
             languages: [
                 {

@@ -20,6 +20,7 @@ export default function () {
         experience: {
             gic: AWS_BASE_EXPERIENCE + "gic.jpeg",
             shopee: AWS_BASE_EXPERIENCE + "shopee.png",
+            mars: AWS_BASE_EXPERIENCE + "mars.png",
             smu: AWS_BASE_EXPERIENCE + "smu.png",
             cmu: AWS_BASE_EXPERIENCE + "cmu.jpeg",
             cudy: AWS_BASE_EXPERIENCE + "cudy.png",

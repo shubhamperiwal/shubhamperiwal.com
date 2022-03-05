@@ -9,6 +9,7 @@ import {
     faRunning,
     faPlaneDeparture,
     faMountain,
+    faDiceD6,
 } from "@fortawesome/free-solid-svg-icons";
 import { connect } from "react-redux";
 
@@ -28,7 +29,8 @@ class Home extends Component {
             "Working Out": faDumbbell,
             Running: faRunning,
             Travelling: faPlaneDeparture,
-            Hiking: faMountain
+            Hiking: faMountain,
+            Blockchain: faDiceD6
         };
     }
 

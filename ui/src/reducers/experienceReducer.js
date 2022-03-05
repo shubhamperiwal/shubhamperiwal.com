@@ -76,6 +76,33 @@ export default function () {
                 tags: ["SQL", "Python", "Automation"],
             },
             {
+                date: "Mar - Aug 2020",
+                img: "mars",
+                title: "Mars International, Inc.",
+                subtitle: "Software Developer",
+                description: (
+                    <>
+                        <br />
+                        Main responsibilities:
+                        <ul>
+                            <li>
+                                Designed, developed, and deployed the {link(
+                                    "client-facing website",
+                                    "https://marsinternational.net/"
+                                )}{" "} for this SME
+                            </li>
+                            <li>
+                                Empowered the employees to dynamically change the content of the website by building an internal interface they can use.
+                            </li>
+                            <li>
+                                Maintained and derived insights from website visitors data using Google Analytics
+                            </li>
+                        </ul>
+                    </>
+                ),
+                tags: ["React", "JavaScript"],
+            },
+            {
                 date: "Jun 2019 – Aug 2019",
                 img: "gic",
                 title: "GIC",
