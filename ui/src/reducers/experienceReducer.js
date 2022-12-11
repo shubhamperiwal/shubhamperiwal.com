@@ -11,10 +11,10 @@ export default function () {
     return {
         work: [
             {
-                date: "Aug 2020 - Present",
+                date: "Jul 2022 - Present",
                 img: "gic",
                 title: "GIC",
-                subtitle: "Quantitative Strategist",
+                subtitle: "Quantitative Strategist (Associate)",
                 description: (
                     <>
                         <br />
@@ -23,8 +23,8 @@ export default function () {
                             "Fixed Income - Systematic Investments Group"
                         </b>{" "}
                         <br />
-                        Sitting at the prime intersection of Finance and
-                        Technology, my everchanging role varies throughout the pipeline of a signal from an idea to a trade <br/>
+                        From my previous Tech-focused role, I've pivoted to a more Finance-centric position which truly defines a "Quant Strat".
+                        I've taken on projects which expose me to the entire end to end pipeline of a signal - from idea to trade.
                         <br />
                         My projects:
                         <ul>
@@ -35,10 +35,10 @@ export default function () {
                                 Implement the signal in production
                             </li>
                             <li>
-                                Build the trade execution platform to allow the conversion from signal to trade
+                                Built the trade execution platform to allow the conversion from signal to trade
                             </li>
                             <li>
-                                Build dashboards for post-trade analytics
+                                Designed and Built dashboards for Post-Trade Analytics
                             </li>
                         </ul>
                     </>
@@ -47,9 +47,45 @@ export default function () {
                     "Fixed Income",
                     "Signal Research",
                     "Trade Execution",
-                    "ReactJS",
                     "Python",
                     "R",
+                ],
+            },
+            {
+                date: "Aug 2020 - Jun 2022",
+                img: "gic",
+                title: "GIC",
+                subtitle: "Quantitative Strategist (Analyst)",
+                description: (
+                    <>
+                        <br />
+                        Analyst in {" "}
+                        <b>
+                            "Fixed Income - Systematic Investments Group"
+                        </b>{" "}
+                        <br />
+                        Sitting at the prime intersection of Finance and
+                        Technology, I design and develop solutions reagrding trade execution and analytics. 
+                        My solutions help the Portfolio Managers focus their time on research rather than execution<br />
+                        <br />
+                        Main Responsibilities:
+                        <ul>
+                            <li>
+                                Developing internal trade execution websites
+                            </li>
+                            <li>
+                                Building web development frameworks to apply division-wide solutions
+                            </li>
+                            <li>
+                                Build dashboards to generate post-trade analytics
+                            </li>
+                        </ul>
+                    </>
+                ),
+                tags: [
+                    "Fixed Income",
+                    "ReactJS",
+                    "Python"
                 ],
             },
             {

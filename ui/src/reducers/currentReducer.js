@@ -10,11 +10,11 @@ function link(text, link) {
 export default function () {
     return {
         upcomingGoal: {
-            title: "June, 2022",
-            img: "gmat",
+            title: "Nov, 2022",
+            img: "cfa",
             description: (
                 <>
-                    My target score is 760/800. I aim to give the exam in early June 2022<br/>
+                    Attempted my CFA Level II exam in November, 2022. Awaiting results. <br/>
                 </>
             ),
         },
@@ -23,17 +23,18 @@ export default function () {
             img: "cfa",
             description: (
                 <>
-                    Most recently, I cleared the CFA Level 1 exam with more than <a target="_blank" href="https://www.dropbox.com/s/2kedigv9vfmxxlx/CFA%20results.pdf?dl=0"> 90th percentile. </a> <br/>
+                    Most recently, I cleared the CFA Level I exam with more than <a target="_blank" href="https://www.dropbox.com/s/2kedigv9vfmxxlx/CFA%20results.pdf?dl=0"> 90th percentile. </a> <br/>
                 </>
             ),
         },
         currentRead: {
-            title: "Super Pumped",
-            img: "superPumped",
+            title: "The Daily Stoic",
+            img: "stoic",
             description: (
                 <>
-                    <i>“The law isn’t what is written. It’s what is enforced.”</i><br/><br/>
-                    Definitely worth a read as the book covers everything from Kalanick's unbelievable hustle to the "bro" culture in Silicon Valley
+                    <i>
+                        You have power over your mind – not outside events. Realize this, and you will find strength. - Marcus Aurelius
+                    </i>
                 </>
             ),
         },
@@ -58,11 +59,11 @@ export default function () {
                 ),
             },
             {
-                title: "Range",
-                img: "range",
+                title: "Super Pumpled",
+                img: "superPumped",
                 description: (
                     <>
-                    <i>“We learn who we are in practice, not in theory."</i><br/><br/>
+                    <i>“The law isn’t what is written. It’s what is enforced.”</i>
                 </>
                 ),
             },

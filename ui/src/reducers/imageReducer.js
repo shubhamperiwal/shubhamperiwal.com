@@ -77,6 +77,7 @@ export default function () {
             netflix: AWS_BASE_CURRENT+"netflix.jpeg",
             range: AWS_BASE_CURRENT+"range.jpeg",
             superPumped: AWS_BASE_CURRENT+"superPumped.jpeg",
+            stoic: AWS_BASE_CURRENT+"stoic.jpeg"
         }
     };
 }
