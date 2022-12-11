@@ -24,30 +24,32 @@ export default function () {
                         </b>{" "}
                         <br />
                         Sitting at the prime intersection of Finance and
-                        Technology, my role is not only to design as well as develop solutions which
-                        generate alpha while streamlining processes so the Portfolio Managers can focus
-                        their time on research rather than execution<br />
+                        Technology, my everchanging role varies throughout the pipeline of a signal from an idea to a trade <br/>
                         <br />
-                        Main Responsibilities:
+                        My projects:
                         <ul>
                             <li>
-                                Developing internal trade execution websites
+                                Signal Research
                             </li>
                             <li>
-                                Building web development frameworks to apply
-                                division-wide solutions
+                                Implement the signal in production
                             </li>
                             <li>
-                                Generate analytics dashboards to gleam insights from the signals' execution results
+                                Build the trade execution platform to allow the conversion from signal to trade
+                            </li>
+                            <li>
+                                Build dashboards for post-trade analytics
                             </li>
                         </ul>
                     </>
                 ),
                 tags: [
                     "Fixed Income",
-                    "Solutions Architecture",
-                    "React",
+                    "Signal Research",
+                    "Trade Execution",
+                    "ReactJS",
                     "Python",
+                    "R",
                 ],
             },
             {
@@ -100,7 +102,7 @@ export default function () {
                         </ul>
                     </>
                 ),
-                tags: ["React", "JavaScript"],
+                tags: ["ReactJS", "JavaScript"],
             },
             {
                 date: "Jun 2019 – Aug 2019",
