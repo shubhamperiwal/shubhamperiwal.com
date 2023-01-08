@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBusinessTime, faLaptopCode, faChartPie, faPuzzlePiece } from "@fortawesome/free-solid-svg-icons";
+import { faBusinessTime, faLaptopCode, faChartPie, faPuzzlePiece, faTableTennis, faBookOpen } from "@fortawesome/free-solid-svg-icons";
 export default function () {
     return {
         firstName: "Shubham",
@@ -8,16 +8,15 @@ export default function () {
             description: (<>
                 ANALYTICAL. CURIOUS. HUMOROUS. <br/><br/>
                 
-                Shubham is a tech enthusiast whose creative zone lies at the intersection of technology {<FontAwesomeIcon icon={faLaptopCode}/>} and business {<FontAwesomeIcon icon={faBusinessTime}/>} <br/>
+                Shubham is a Fintech enthusiast. Having recently pivoted from a software developer to a quantitative strategist, he is aspiring to be accomplished in both worlds. He holds professional certifications in both Finance and Tech due to his love for lifelong learning. <br/><br/>
 
-                His main interests are in the fields of Software Development as well as Data Analytics {<FontAwesomeIcon icon={faChartPie}/>}<br/>
+                He is inspired by the journeys of founders and CEOs. Combining that with his love for books, he has read many of their (auto)biographies, including Jack Ma (Alibaba), Richard Branson (Virgin), and Phil Knight (Nike), to name a few. {<FontAwesomeIcon icon={faBookOpen}/>}  <br/><br/>
 
-                He likes exploring new technical skills and keeping himself updated by being enrolled in multiple online courses.<br/>
-                He also enjoys imparting his knowledge to others and aide them in any way possible.<br/>
+                Moving beyond intellectual acuity, he is a huge sports fanatic and loves playing racquet sports like badminton, tennis, and squash. {<FontAwesomeIcon icon={faTableTennis}/>}  <br/><br/>
 
                 Something that piques his interest includes solving riddles, puzzles {<FontAwesomeIcon icon={faPuzzlePiece}/>} and brain teasers. He loves everything from word scrambles to mathematical puzzles like Sudoku.<br/><br/>
 
-                Please feel free to get in touch with him if you're interested in anything from <b>development</b> to <b>entrepreneurship. </b><br/><br/>
+                Please connect with him if you're interested in conversations about technology, finance, entrepreneurship, and psychology, or would just love a friendly ear.  <br/><br/>
                 
             </>),
 
@@ -49,10 +48,6 @@ export default function () {
                 {
                     title: "Hiking",
                     description: "The higher the better",
-                },
-                {
-                    title: "Blockchain",
-                    description: "The coins and the underlying framework",
                 },
             ],
             languages: [
