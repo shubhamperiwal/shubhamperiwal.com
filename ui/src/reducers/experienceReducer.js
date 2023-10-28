@@ -20,7 +20,7 @@ export default function () {
                         <br />
                         Associate in {" "}
                         <b>
-                            "Fixed Income - Systematic Investments Group"
+                            "Total Portfolio Solutions"
                         </b>{" "}
                         <br />
                         From my previous Tech-focused role, I've pivoted to a more Finance-centric position which truly defines a "Quant Strat".
@@ -29,16 +29,13 @@ export default function () {
                         My projects:
                         <ul>
                             <li>
-                                Signal Research
+                                Signal Research and Implementation in Production
                             </li>
                             <li>
-                                Implement the signal in production
+                                Execution Optimization
                             </li>
                             <li>
-                                Built the trade execution platform to allow the conversion from signal to trade
-                            </li>
-                            <li>
-                                Designed and Built dashboards for Post-Trade Analytics
+                                Designed and worked with developers to build dashboards for Portfolio Analytics
                             </li>
                         </ul>
                     </>
@@ -71,13 +68,10 @@ export default function () {
                         Main Responsibilities:
                         <ul>
                             <li>
-                                Developing internal trade execution websites
+                                Built the trade execution platform to allow the conversion from signal to trade
                             </li>
                             <li>
-                                Building web development frameworks to apply division-wide solutions
-                            </li>
-                            <li>
-                                Build dashboards to generate post-trade analytics
+                                Designed and developed risk and performance attribution framework which disrupted the team's portfolio analytics
                             </li>
                         </ul>
                     </>

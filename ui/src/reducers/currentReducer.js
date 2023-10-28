@@ -10,11 +10,11 @@ function link(text, link) {
 export default function () {
     return {
         upcomingGoal: {
-            title: "Nov, 2022",
-            img: "cfa",
+            title: "Aug, 2024",
+            img: "mba",
             description: (
                 <>
-                    Attempted my CFA Level II exam in November, 2022. Awaiting results. <br/>
+                    Preparing for post-graduate studies. <br/>
                 </>
             ),
         },
@@ -23,7 +23,7 @@ export default function () {
             img: "cfa",
             description: (
                 <>
-                    Most recently, I cleared the CFA Level I exam with more than <a target="_blank" href="https://www.dropbox.com/s/2kedigv9vfmxxlx/CFA%20results.pdf?dl=0"> 90th percentile. </a> <br/>
+                    Cleared CFA Level II in first attempt. <br/><br/>
                 </>
             ),
         },

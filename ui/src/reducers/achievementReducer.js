@@ -112,18 +112,36 @@ export default function () {
         certificates: [
             {
                 img: "cfa",
+                title: "CFA Level 2",
+                issuer: "CFA",
+                issueDate: "Jan 2023",
+                link:
+                    "https://www.dropbox.com/s/6hqa0xcn8p6gj54/CFALevel2.pdf?dl=0",
+                body: (
+                    <>
+                        Cleared CFA Level 2 in the first attempt. <br/>
+                        View the Exam results{" "}
+                        {link(
+                            "here",
+                            "https://www.dropbox.com/s/6hqa0xcn8p6gj54/CFALevel2.pdf?dl=0"
+                        )}
+                    </>
+                ),
+            },
+            {
+                img: "cfa",
                 title: "CFA Level 1",
                 issuer: "CFA",
                 issueDate: "Jan 2022",
                 link:
-                    "https://www.dropbox.com/s/2kedigv9vfmxxlx/CFA%20results.pdf?dl=0",
+                    "https://www.dropbox.com/scl/fi/qvesx6cfd2l8rfo8yu82u/CFALevel1.pdf?rlkey=9q6ntoc6g4pkp1kkkupcaopeo&dl=0",
                 body: (
                     <>
                         Cleared CFA Level 1 with greater than 90th percentile. <br/>
                         View the Exam results{" "}
                         {link(
                             "here",
-                            "https://www.dropbox.com/s/2kedigv9vfmxxlx/CFA%20results.pdf?dl=0"
+                            "https://www.dropbox.com/scl/fi/qvesx6cfd2l8rfo8yu82u/CFALevel1.pdf?rlkey=9q6ntoc6g4pkp1kkkupcaopeo&dl=0"
                         )}
                     </>
                 ),
