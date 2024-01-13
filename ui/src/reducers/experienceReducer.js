@@ -11,37 +11,38 @@ export default function () {
     return {
         work: [
             {
-                date: "Jul 2022 - Present",
+                date: "Apr 2022 - Present",
                 img: "gic",
                 title: "GIC",
                 subtitle: "Quantitative Strategist (Associate)",
                 description: (
                     <>
                         <br />
-                        Associate in {" "}
-                        <b>
-                            "Total Portfolio Solutions"
-                        </b>{" "}
-                        <br />
-                        From my previous Tech-focused role, I've pivoted to a more Finance-centric position which truly defines a "Quant Strat".
-                        I've taken on projects which expose me to the entire end to end pipeline of a signal - from idea to trade.
-                        <br />
-                        My projects:
-                        <ul>
-                            <li>
-                                Signal Research and Implementation in Production
-                            </li>
-                            <li>
-                                Execution Optimization
-                            </li>
-                            <li>
-                                Designed and worked with developers to build dashboards for Portfolio Analytics
-                            </li>
-                        </ul>
+                        Pivoting from a software developer to a quantitative strategist, I have had the pleasure of experiencing the entire
+                         end to end pipeline of a systematic trading signal - from idea to trade.
+                        <br /><br />
+                        Steps of a systematic trading signal I've contributed to:
+                        <table>
+                            <tr>
+                                <td><b>Idea&nbsp;&nbsp;</b> </td> <td>Researching a hypothesis for a systematic signal</td>
+                            </tr>
+                            <tr>
+                                <td><b>Backtesting&nbsp;&nbsp;</b> </td> <td>Testing the hypothesis by backtesting the signal</td>
+                            </tr>
+                            <tr>
+                                <td><b>Implementation &nbsp;&nbsp;</b> </td> <td>Building the pipeline to run that signal in a production environment </td>
+                            </tr>
+                            <tr>
+                                <td><b>Execution&nbsp;&nbsp;</b> </td><td> Converting the signal's theoretical output into actual trades</td>
+                            </tr>
+                            <tr>
+                                <td><b>Post-trade Analytics&nbsp;&nbsp;</b> </td> <td>Designing the dashboard to analyse a signal's performance and generate insights</td>
+                            </tr>
+                        </table>
                     </>
                 ),
                 tags: [
-                    "Fixed Income",
+                    "Equities",
                     "Signal Research",
                     "Trade Execution",
                     "Python",
@@ -79,8 +80,40 @@ export default function () {
                 tags: [
                     "Fixed Income",
                     "ReactJS",
-                    "Python"
+                    "Python",
+                    "Django",
+                    "Java"
                 ],
+            },
+
+            {
+                date: "Apr 2016 - present",
+                img: "mars",
+                title: "Mars International, Inc.",
+                subtitle: "Head Of Technology",
+                description: (
+                    <>
+                        <br/>
+                        Managing all technology-related operations for the family business.
+                        <br />
+                        Main responsibilities:
+                        <ul>
+                            <li>
+                                Design, develop, and maintain the {link(
+                                    "client-facing website",
+                                    "https://marsinternational.net/"
+                                )}{" "} 
+                            </li>
+                            <li>
+                                Design and develop an intuitive suite of dashboards to better assess the market and competitors
+                            </li>
+                            <li>
+                                Build and analyse the digital marketing campaigns
+                            </li>
+                        </ul>
+                    </>
+                ),
+                tags: ["Tableau", "ReactJS", "JavaScript"],
             },
             {
                 date: "Jan - Feb 2020",
@@ -106,33 +139,6 @@ export default function () {
                     </>
                 ),
                 tags: ["SQL", "Python", "Automation"],
-            },
-            {
-                date: "Mar - Aug 2020",
-                img: "mars",
-                title: "Mars International, Inc.",
-                subtitle: "Software Developer",
-                description: (
-                    <>
-                        <br />
-                        Main responsibilities:
-                        <ul>
-                            <li>
-                                Designed, developed, and deployed the {link(
-                                    "client-facing website",
-                                    "https://marsinternational.net/"
-                                )}{" "} for this SME
-                            </li>
-                            <li>
-                                Empowered the employees to dynamically change the content of the website by building an internal interface they can use.
-                            </li>
-                            <li>
-                                Maintained and derived insights from website visitors data using Google Analytics
-                            </li>
-                        </ul>
-                    </>
-                ),
-                tags: ["ReactJS", "JavaScript"],
             },
             {
                 date: "Jun 2019 – Aug 2019",

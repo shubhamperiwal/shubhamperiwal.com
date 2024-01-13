@@ -10,7 +10,7 @@ function link(text, link) {
 export default function () {
     return {
         upcomingGoal: {
-            title: "Aug, 2024",
+            title: "", // If you want to add dates to the achievements, they go here
             img: "mba",
             description: (
                 <>
@@ -19,7 +19,7 @@ export default function () {
             ),
         },
         recentlyAchieved: {
-            title: "Jan, 2022",
+            title: "", // If you want to add dates to the achievements, they go here
             img: "cfa",
             description: (
                 <>
@@ -28,24 +28,27 @@ export default function () {
             ),
         },
         currentRead: {
-            title: "The Daily Stoic",
-            img: "stoic",
+            title: "The Manager's Handbook",
+            img: "managerHandbook",
             description: (
                 <>
-                    <i>
-                        You have power over your mind – not outside events. Realize this, and you will find strength. - Marcus Aurelius
-                    </i>
+                    <ul>Five <b>critical</b> skills shared by successful leaders: <br/><br/>
+                    <li>Commitment to building a team</li>
+                    <li>Fanatical custodian of time</li>
+                    <li>Willingness to seek and take advice</li>
+                    <li>Adherance to priorities</li>
+                    <li>Obsession with quality</li>
+                    </ul>
                 </>
             ),
         },
         latestRead: [
             {
-                title: "Tarzan Economics",
-                img: "tarzan",
+                title: "The Daily Stoic",
+                img: "stoic",
                 description: (
                     <i>
-                        The 'curse of knowledge' is the misplaced assumption that the people around us share the same knowledge
-                        in an area where we have developed our expertise
+                        You have power over your mind – not outside events. Realize this, and you will find strength. - Marcus Aurelius
                     </i>
                 ),
             },

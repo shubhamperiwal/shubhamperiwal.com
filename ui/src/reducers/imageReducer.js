@@ -78,7 +78,8 @@ export default function () {
             range: AWS_BASE_CURRENT+"range.jpeg",
             superPumped: AWS_BASE_CURRENT+"superPumped.jpeg",
             stoic: AWS_BASE_CURRENT+"stoic.jpeg",
-            mba: AWS_BASE_CURRENT+"mba.png"
+            mba: AWS_BASE_CURRENT+"mba.png",
+            managerHandbook: AWS_BASE_CURRENT+"managerHandbook.jpeg",
         }
     };
 }
