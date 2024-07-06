@@ -11,10 +11,10 @@ export default function () {
     return {
         work: [
             {
-                date: "Apr 2022 - Present",
+                date: "Apr 2022 - Jun 2024",
                 img: "gic",
                 title: "GIC",
-                subtitle: "Quantitative Strategist (Associate)",
+                subtitle: "Quantitative Strategist (Associate/AVP)",
                 description: (
                     <>
                         <br />
@@ -257,6 +257,18 @@ export default function () {
             },
         ],
         education: [
+            {
+                date: "2024 - 2026",
+                img: "iima",
+                title: "IIM Ahmedabad",
+                subtitle: "Post Graduate Programme",
+                description: (
+                    <> <br/>
+                        Writing my story here.
+                    </>
+                ),
+                tags: [],
+            },
             {
                 date: "2016 - 2020",
                 img: "smu",

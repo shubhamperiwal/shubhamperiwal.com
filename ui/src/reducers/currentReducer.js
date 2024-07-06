@@ -11,19 +11,19 @@ export default function () {
     return {
         upcomingGoal: {
             title: "", // If you want to add dates to the achievements, they go here
-            img: "mba",
+            img: "mavericks",
             description: (
                 <>
-                    Preparing for post-graduate studies. <br/>
+                    Starting a venture in IIMA's startup incubator. <br/>Stay tuned to find out more.<br/>
                 </>
             ),
         },
         recentlyAchieved: {
             title: "", // If you want to add dates to the achievements, they go here
-            img: "cfa",
+            img: "iima",
             description: (
                 <>
-                    Cleared CFA Level II in first attempt. <br/><br/>
+                    Accepted into IIM-Ahmedabad (~0.2% acceptance rate) for MBA batch of 2024-26.<br/><br/>
                 </>
             ),
         },

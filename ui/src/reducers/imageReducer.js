@@ -25,6 +25,7 @@ export default function () {
             cmu: AWS_BASE_EXPERIENCE + "cmu.jpeg",
             cudy: AWS_BASE_EXPERIENCE + "cudy.png",
             hwa: AWS_BASE_EXPERIENCE + "hwa.jpeg",
+            iima: AWS_BASE_EXPERIENCE + "iima_white.jpg",
         },
         handwritten: {
             about: AWS_BASE_HANDWRITTEN + "hwAbout.png",
@@ -80,6 +81,8 @@ export default function () {
             stoic: AWS_BASE_CURRENT+"stoic.jpeg",
             mba: AWS_BASE_CURRENT+"mba.png",
             managerHandbook: AWS_BASE_CURRENT+"managerHandbook.jpeg",
+            mavericks: AWS_BASE_CURRENT+"mavericks.png",
+            iima: AWS_BASE_CURRENT+"iima.png"   
         }
     };
 }
